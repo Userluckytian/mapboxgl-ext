@@ -1,0 +1,3295 @@
+
+{
+	"version": 8,
+	"name": "SZ_BaseMap",
+	"sources": {
+	  "SZ_BaseMap_8": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_8@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	  "SZ_BaseMap_9": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_9@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	  "SZ_BaseMap_10": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_10@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	  "SZ_BaseMap_11": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_11@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"										 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	  "SZ_BaseMap_12": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_12@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	  "SZ_BaseMap_13": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_13@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	  "SZ_BaseMap_15": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_15@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	  "SZ_BaseMap_POI": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_POI@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	  "SZ_BaseMap_JXH": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASZ_BaseMap_JXH@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+    },
+    "SX_SX_P_300000_B0001": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_P_300000_B0001@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                           
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "SX_SX_PT_300000": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_PT_300000@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                          
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "SX_SX_P_200000_B0001": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_P_200000_B0001@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                      
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "SX_SX_PT_200000": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_PT_200000@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                               
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "SX_SX_P_100000_B0001": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_P_100000_B0001@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                             
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "SX_SX_PT_100000": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_PT_100000@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                              
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "SX_SX_P_B0001": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_P_B0001@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                             
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+	},
+	"SX_SX_P": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_P@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                             
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+    "SX_SX_PT": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3ASX_SX_PT@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                              
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "XZQH_XZJXZJX_L_DSJH": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3AXZQH_XZJXZJX_L_DSJH@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                              
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "XZQH_XZJXZJX_L_QXJH": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3AXZQH_XZJXZJX_L_QXJH@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                             
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+    },
+    "SIP_JXH": {
+      "tiles": [
+        "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/YQ_KSH%3ASIP_JXH@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                                
+      ],
+      
+      "type": "vector",
+      "scheme":"tms"
+	},
+	"RMLJXH": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/YQ_KSH%3ARMLJXH@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"                                                
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	  },
+	"QG_BaseMap": {
+	  "tiles": [
+		"http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/QG_BaseMap%3AQG_BaseMap@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"											   
+	  ],
+	  
+	  "type": "vector",
+	  "scheme":"tms"
+	},
+	"SZ_BaseMap_JZW": {
+		"tiles": [
+		  "http://map2.cityfun.com.cn/geoserver/gwc/service/tms/1.0.0/SZ_BaseMap%3AJGZW_JZW_P@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"					 
+		],
+		
+		"type": "vector",
+		"scheme":"tms"
+	},
+	"terrain-v2": {
+		"maxzoom":15,
+		"tiles": [
+			"http://cim.cityfun.com.cn/mbtiles/sz_mtv2/{z}/{x}/{y}.pbf"                                                        
+		],
+		"type": "vector"
+	}
+	},
+	"glyphs": "http://webres.cityfun.com.cn/szmap/szmap_dark/fonts/{fontstack}/{range}.pbf",
+	"sprite": "http://webres.cityfun.com.cn/szmap/szmap_dark/sprites/sprite",
+	"zoom": 14.1,
+ 	"center": [120.692, 31.319],
+	"layers": [
+		{
+		  "id": "background",
+		  "type": "background",
+		  "paint": {
+			"background-color": "#2e2e2e"
+		  }
+		},
+		
+		{
+			"id": "HY_P",
+			"type": "fill",
+			"source": "QG_BaseMap",
+			"source-layer": "HY_P",
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#242424"
+			}
+  		},
+ 		{
+			"id": "XZQ_World_P",
+			"type": "fill",
+			"source": "QG_BaseMap",
+			"source-layer": "XZQ_World_P",
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#2e2e2e"
+			}
+  		},
+ 		{
+			"id": "XZQ_World_L",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZQ_World_P",
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+			"line-color":["interpolate",["linear"],["zoom"],3,"#595959",6,"#666666",12,"#808080"],
+			"line-width": ["interpolate",["linear"],["zoom"],3,1, 6,1.5, 8,2.5, 12,3, 14,4, 16,5]
+			}
+		},
+  		{
+			"id": "XZQ_GJ_P",
+			"type": "fill",
+			"source": "QG_BaseMap",
+			"source-layer": "XZQ_GJ_P",
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#2e2e2e"
+			}
+  		},
+ 		{
+			"id": "SX_P_005_5",
+			"type": "fill",
+			"source": "QG_BaseMap",
+			"source-layer": "SX_P_005",
+			"minzoom":12,
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#242424"
+			}
+		},
+		{
+			"id": "SX_P_005_4",
+			"type": "fill",
+			"source": "QG_BaseMap",
+			"source-layer": "SX_P_005",
+			"minzoom":10,
+			"maxzoom":12,
+			"filter":[">=", ["to-number", ["get", "MJ"]], 5000000],
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#242424"
+			}
+		},
+		{
+			"id": "SX_P_005_3",
+			"type": "fill",
+			"source": "QG_BaseMap",
+			"source-layer": "SX_P_005",
+			"minzoom":8,
+			"maxzoom":10,
+			"filter":[">=", ["to-number", ["get", "MJ"]], 10000000],
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#242424"
+			}
+		},
+		{
+			"id": "SX_P_005_2",
+			"type": "fill",
+			"source": "QG_BaseMap",
+			"source-layer": "SX_P_005",
+			"minzoom":6,
+			"maxzoom":8,
+			"filter":[">=", ["to-number", ["get", "MJ"]], 50000000],
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#242424"
+			}
+		},
+		{
+			"id": "SX_P_005_1",
+			"type": "fill",
+			"source": "QG_BaseMap",
+			"source-layer": "SX_P_005",
+			"minzoom":4,
+			"maxzoom":6,
+			"filter":[">=", ["to-number", ["get", "MJ"]], 200000000],
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#242424"
+			}
+ 		},
+  		{
+			"id": "XZJX_XJ_L_YS",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZJX_XJ_L_YS",
+			"minzoom":10,
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+			"line-color":["interpolate",["linear"],["zoom"],7,"#595959",9,"#666666",16,"#808080"],
+			"line-width": ["interpolate",["linear"],["zoom"],7,0.2, 9,0.5, 10,1, 12,1.2, 14,2, 16,3]
+			}
+		},
+		{
+			"id": "XZJX_City_L_YS",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZJX_City_L_YS",
+			"minzoom":10,
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+				"line-color": ["interpolate",["linear"],["zoom"],5,"#595959",9,"#666666",16,"#808080"],
+				"line-width": ["interpolate",["linear"],["zoom"],8,1.2, 10,1.5, 12,2 ,16,3],
+				"line-dasharray": [
+					"step",
+					["zoom"],
+					["literal", [3.5, 1, 0.5, 1, 0.5]],
+					8,
+					["literal", [7, 2, 1, 2, 1]],
+					16,
+					["literal", [10.5, 3, 1.5, 3, 1.5]]
+				]
+			}
+  		},
+  		{
+			"id": "XZJX_SJ_L_YS",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZJX_SJ_L_YS",
+			"minzoom":10,
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+			"line-color":["interpolate",["linear"],["zoom"],3,"#595959",8,"#666666",16,"#808080"],
+			"line-width": ["interpolate",["linear"],["zoom"],3,0.5, 6,1.2, 8,2, 12,3, 14,4, 16,5]
+			}
+  		},
+ 		{
+			"id": "XZJX_GJ_L_YS",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZJX_GJ_L_YS",
+			"minzoom":10,
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+			"line-color":"#807551",
+			"line-width": ["interpolate",["linear"],["zoom"],3,1, 6,1.5, 8,2.5, 12,3, 14,4, 16,5]
+			}
+		},
+		{
+			"id": "XZJX_XJ_L",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZJX_XJ_L",
+			"minzoom":7,
+			"maxzoom":10,
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+			"line-color":["interpolate",["linear"],["zoom"],7,"#595959",8,"#666666",16,"#808080"],
+			"line-width": ["interpolate",["linear"],["zoom"],7,0.2, 9,0.5, 10,1, 12,1.2, 14,2, 16,3]
+			}
+		},
+		{
+			"id": "XZJX_City_L",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZJX_City_L",
+			"minzoom":5,
+			"maxzoom":10,
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+			"line-color":["interpolate",["linear"],["zoom"],5,"#595959",8,"#666666",16,"#808080"],
+			"line-width": ["interpolate",["linear"],["zoom"],5,0.2, 6,0.5, 8,1.2, 12,2, 14,3, 16,4]
+			}
+		},
+		{
+			"id": "XZJX_SJ_L",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZJX_SJ_L",
+			"maxzoom":10,
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+			"line-color":["interpolate",["linear"],["zoom"],3,"#595959",8,"#666666",16,"#808080"],
+			"line-width": ["interpolate",["linear"],["zoom"],3,0.5, 6,1.2, 8,2, 12,3, 14,4, 16,5]
+			}
+		},
+		{
+			"id": "XZJX_GJ_L",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "XZJX_GJ_L",
+			"maxzoom":10,
+			"layout": {
+			"line-cap": "round",
+			"line-join": "round"
+			},
+			"paint": {
+			"line-color":"#807551",
+			"line-width": ["interpolate",["linear"],["zoom"],3,1, 6,1.5, 8,2.5, 12,3, 14,4, 16,5]
+			}
+		},
+		{
+			"id": "JT_GL_Case",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "JT_GL_L",
+			"minzoom": 8,
+			"layout": {
+			  "line-cap": "round",
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": "#292929",
+			  "line-width": ["interpolate",["linear"],["zoom"],0,0, 8,3, 9,5, 10,7, 12,9, 14,12, 16,22 ,18,28]
+			}
+		  },
+		{
+			"id": "JT_GL_L",
+			"type": "line",
+			"source": "QG_BaseMap",
+			"source-layer": "JT_GL_L",
+			"minzoom": 4,
+			"layout": {
+			  "line-cap": "round",
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color":"#454545",
+			  "line-width": ["interpolate",["linear"],["zoom"],0,0, 4,0.5, 6,1, 8,1.5, 12,7, 14,10, 16,20,18,26]
+			}
+		},
+		{
+			"id": "JT_GL_SG",
+			"type": "symbol",
+			"source": "QG_BaseMap",
+			"source-layer": "JT_GL_Lz",
+			"minzoom": 7,
+			"filter": ["match", ["get", "LX"], ["S"], true,false ],
+			"layout": {
+			  "symbol-placement": "line",
+			  "text-font": ["ArialBold"],
+			  "text-size": ["interpolate",["linear"],["zoom"],7,9, 13,10],
+			  "text-field": ["to-string", ["get", "RN"]],
+			  "text-offset": [0, 0.3],
+			  "icon-image":[
+				"step",
+				["zoom"],
+				"",
+				8,
+				["match",["get", "Len"],["2"],"GSGL_S/省道/2","GSGL_S/省道/3"],
+				13,
+				["match",["get", "Len"],["2"],"GSGL_L/省道/3","GSGL_L/省道/4"]
+			  ],
+			  "icon-rotation-alignment": "viewport",
+			  "text-rotation-alignment": "viewport",
+			  "symbol-spacing": ["interpolate",["linear"],["zoom"],7,250,  11,400, 12,500]
+			},
+			"paint": {
+			  "text-color": "#FFFFFF"
+			}
+		},
+		{
+			"id": "JT_GL_GG",
+			"type": "symbol",
+			"source": "QG_BaseMap",
+			"source-layer": "JT_GL_Lz",
+			"minzoom": 7,
+			"filter": ["match", ["get", "LX"], ["G"], true,false ],
+			"layout": {
+			  "symbol-placement": "line",
+			  "text-font": ["ArialBold"],
+			  "text-size": ["interpolate",["linear"],["zoom"],7,9, 13,10],
+			  "text-field": ["to-string", ["get", "RN"]],
+			  "text-offset": [0, 0.3],
+			  "icon-image":[
+				"step",
+				["zoom"],
+				"",
+				7,
+				["match",["get", "Len"],["2"],"GSGL_S/国道/2",["3"],"GSGL_S/国道/3",["4"],"GSGL_S/国道/4","GSGL_S/国道/5"],
+				13,
+				["match",["get", "Len"],["2"],"GSGL_L/国道/3",["3"],"GSGL_L/国道/4",["4"],"GSGL_L/国道/5","GSGL_L/国道/6"]
+			  ],
+			  "icon-rotation-alignment": "viewport",
+			  "text-rotation-alignment": "viewport",
+			  "symbol-spacing": ["interpolate",["linear"],["zoom"],7,250,  11,400,  12,500]
+			},
+			"paint": {
+			  "text-color": "#FFFFFF"
+			}
+		},
+		{
+			"id": "XZQ_XJ_PT",
+			"type": "symbol",
+			"source": "QG_BaseMap",
+			"source-layer": "XZQ_XJ_PT",
+			"minzoom": 8,
+			"layout": {
+				"text-line-height": 1.1,
+				"text-size": ["interpolate",["linear"],["zoom"],8,10, 10,12, 12,14, 14,16, 16,18],
+				"text-max-angle": 38,
+				"text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],12,["literal",["MicrosoftYaHeiBold"]]],
+				"text-padding": 2,
+				"text-anchor": "center",
+				"text-field": ["to-string", ["get", "BZMC"]],
+				"text-max-width": 8
+			},
+			"paint": {
+				"text-color": ["interpolate",["linear"],["zoom"],8,"#9C9C9C",14,"#b0b0b0"],
+				"text-halo-color": "#0d0d0d",
+				"text-halo-width": 1
+			}
+		},
+		{
+			"id": "XZQ_City_PT",
+			"type": "symbol",
+			"source": "QG_BaseMap",
+			"source-layer": "XZQ_City_PT",
+			"minzoom": 6,
+			"layout": {
+				"text-line-height": 1.1,
+				"text-size": ["interpolate",["linear"],["zoom"],6,10, 8,12, 10,14, 12,16, 16,18],
+				"text-max-angle": 38,
+				"text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],8,["literal",["MicrosoftYaHeiBold"]]],
+				"text-padding": 2,
+				"text-anchor": "center",
+				"text-field": ["to-string", ["get", "BZMC"]],
+				"text-max-width": 8
+			},
+			"paint": {
+				"text-color": ["interpolate",["linear"],["zoom"],6,"#9C9C9C",10,"#b0b0b0"],
+			 	"text-halo-color": "#0d0d0d",
+				"text-halo-width": 1
+			}
+		},
+		{
+			"id": "XZQ_SJ_PT",
+			"type": "symbol",
+			"source": "QG_BaseMap",
+			"source-layer": "XZQ_SJ_PT",
+			"minzoom": 3,
+			"layout": {
+				"text-line-height": 1.1,
+				"text-size": ["interpolate",["linear"],["zoom"],3,9,4,11, 6,12, 8,14, 10,16, 12,18, 14,20, 16,22],
+				"text-max-angle": 38,
+				"text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],5,["literal",["MicrosoftYaHeiBold"]]],
+				"text-padding": 2,
+				"text-anchor": "center",
+				"text-field": ["to-string", ["get", "BZMC"]],
+				"text-max-width": 8
+			},
+			"paint": {
+				"text-color": ["interpolate",["linear"],["zoom"],3,"#9C9C9C",6,"#b0b0b0"],
+			  	"text-halo-color": "#0d0d0d",
+				"text-halo-width": 1.2
+			}
+		},
+		{
+			"id": "XZQH_DS_P",
+			"type": "fill",
+			"source": "SZ_BaseMap_8",
+			"source-layer": "XZQH_DS_P",
+			"minzoom":8.2,
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#2e2e2e"
+			}
+		},
+		{
+            "id": "hillshade",
+            "type": "fill",
+            "source": "terrain-v2",
+            "source-layer": "hillshade",
+            "layout": {},
+            "paint": {
+                "fill-color": [
+                    "match",
+                    ["get", "class"],
+                    "shadow",
+                    "#000000",
+                    "#999999"
+                ],
+                "fill-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    14,
+                    [
+                        "match",
+                        ["get", "level"],
+                        [67, 56],
+                        0.06,
+                        [89, 78],
+                        0.05,
+                        0.12
+                    ],
+                    16,
+                    0
+                ],
+                "fill-antialias": false
+            }
+		},
+        {
+            "id": "contour-line",
+            "type": "line",
+            "source": "terrain-v2",
+            "source-layer": "contour",
+            "minzoom": 11,
+			"filter": ["all",
+				["!=", ["get", "index"], -1],
+				[">=", ["get", "ele"], 20]
+			  ],
+            "layout": {},
+            "paint": {
+                "line-opacity": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    11,
+                    ["match", ["get", "index"], [1, 2], 0.15, 0.25],
+                    12,
+                    ["match", ["get", "index"], [1, 2], 0.3, 0.5]
+                ],
+                "line-color": "#000000",
+                "line-width": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    13,
+                    ["match", ["get", "index"], [1, 2], 0.5, 0.6],
+                    16,
+                    ["match", ["get", "index"], [1, 2], 0.8, 1.2]
+                ],
+                "line-offset": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    13,
+                    ["match", ["get", "index"], [1, 2], 1, 0.6],
+                    16,
+                    ["match", ["get", "index"], [1, 2], 1.6, 1.2]
+                ]
+            }
+        },
+        {
+            "id": "contour-label",
+            "type": "symbol",
+            "source": "terrain-v2",
+            "source-layer": "contour",
+            "minzoom": 11,
+            "filter": [
+                "any",
+                ["==", ["get", "index"], 10],
+                ["==", ["get", "index"], 5]
+            ],
+            "layout": {
+                "text-field": ["concat", ["get", "ele"], " m"],
+                "symbol-placement": "line",
+                "text-pitch-alignment": "viewport",
+                "text-max-angle": 25,
+                "text-padding": 5,
+                "text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],12,["literal",["MicrosoftYaHeiBold"]]],
+                "text-size": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    15,
+                    9.5,
+                    20,
+                    12
+                ]
+            },
+            "paint": {
+				"text-color": "#B0B0B0",
+				"text-halo-color": "#0d0d0d",
+				"text-halo-width": 1
+            }
+		},
+		{
+			"id": "SX_SX_P",
+			"type": "fill",
+			"source": "SX_SX_P",
+			"source-layer": "SX_SX_P",
+			"minzoom":16,
+			"layout": {
+			},
+			"paint": {
+				"fill-color": "#242424",
+				"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+			}
+		},
+		{
+			"id": "SX_SX_P_B0001",
+			"type": "fill",
+			"source": "SX_SX_P_B0001",
+			"source-layer": "SX_SX_P_B0001",
+			"minzoom":15,
+			"maxzoom":16,
+			"layout": {
+			},
+			"paint": {
+				"fill-color": "#242424",
+				"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+			}
+		},
+		{
+			"id": "SX_SX_P_100000_B0001",
+			"type": "fill",
+			"source": "SX_SX_P_100000_B0001",
+			"source-layer": "SX_SX_P_100000_B0001",
+			"minzoom":14,
+			"maxzoom":15,
+			"layout": {
+			},
+			"paint": {
+				"fill-color": "#242424",
+				"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+			}
+		},
+		{
+		"id": "SX_SX_P_200000_B0001",
+		"type": "fill",
+		"source": "SX_SX_P_200000_B0001",
+		"source-layer": "SX_SX_P_200000_B0001",
+		"minzoom":12,
+		"maxzoom":14,
+		"layout": {
+		},
+		"paint": {
+			"fill-color": "#242424",
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+		}
+		},
+		{
+		"id": "SX_SX_P_JH",
+		"type": "fill",
+		"source": "SX_SX_P_300000_B0001",
+		"source-layer": "SX_SX_P_300000_B0001",
+		"minzoom":11,
+		"maxzoom":12,
+		"layout": {
+		},
+		"paint": {
+			"fill-color": "#242424",
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+		}
+		},
+		{
+		"id": "SX_SX_P_1000000",
+		"type": "fill",
+		"source": "SX_SX_P_300000_B0001",
+		"source-layer": "SX_SX_P_300000_B0001",
+		"filter":[">=", ["to-number", ["get", "MJ"]], 1000000],
+		"minzoom":10,
+		"maxzoom":11,
+		"layout": {
+		},
+		"paint": {
+			"fill-color": "#242424",
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+		}
+		},
+		{
+		"id": "SX_SX_P_6000000",
+		"type": "fill",
+		"source": "SX_SX_P_300000_B0001",
+		"source-layer": "SX_SX_P_300000_B0001",
+		"minzoom":8,
+		"maxzoom":10,
+		"filter":[">=", ["to-number", ["get", "MJ"]], 6000000],
+		"layout": {
+		},
+		"paint": {
+			"fill-color": "#242424"
+			}
+		},
+		{
+			"id": "XZQH_DS_B_50",
+			"type": "fill",
+			"source": "SZ_BaseMap_8",
+			"source-layer": "XZQH_DS_B_50",
+			"minzoom": 13,
+			"layout": {
+			},
+			"paint": {
+			"fill-color": ["match",["to-number", ["get", "distance"]],[50],"#404040",[100],"#666666","#000000"],
+			"fill-opacity": 0.8,
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+			}
+		}, 
+		{
+			"id": "XZQH_DS_B_100",
+			"type": "fill",
+			"source": "SZ_BaseMap_8",
+			"source-layer": "XZQH_DS_B_100",
+			"minzoom": 12,
+			"maxzoom":13,
+			"layout": {
+			},
+			"paint": {
+			"fill-color": ["match",["to-number", ["get", "distance"]],[100],"#404040",[200],"#666666","#000000"],
+			"fill-opacity": 0.8,
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+			}
+		}, 
+		{
+			"id": "XZQH_DS_B_200",
+			"type": "fill",
+			"source": "SZ_BaseMap_8",
+			"source-layer": "XZQH_DS_B_200",
+			"minzoom": 11,
+			"maxzoom":12,
+			"layout": {
+			},
+			"paint": {
+			"fill-color": ["match",["to-number", ["get", "distance"]],[200],"#404040",[400],"#666666","#000000"],
+			"fill-opacity": 0.8,
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+			}
+		}, 
+		{
+			"id": "XZQH_DS_B_400",
+			"type": "fill",
+			"source": "SZ_BaseMap_8",
+			"source-layer": "XZQH_DS_B_400",
+			"minzoom": 10,
+			"maxzoom":11,
+			"layout": {
+			},
+			"paint": {
+			"fill-color": ["match",["to-number", ["get", "distance"]],[400],"#404040",[800],"#666666","#000000"],
+			"fill-opacity": 0.8,
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+			}
+		}, 
+		
+		{
+			"id": "XZQH_DS_B_600",
+			"type": "fill",
+			"source": "SZ_BaseMap_8",
+			"source-layer": "XZQH_DS_B_600",
+			"minzoom": 9,
+			"maxzoom":10,
+			"layout": {
+			},
+			"paint": {
+			"fill-color": ["match",["to-number", ["get", "distance"]],[600],"#404040",[1200],"#666666","#000000"],
+			"fill-opacity": 0.8,
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+			}
+		},
+		{
+		  "id": "XZQH_DS_B",
+		  "type": "fill",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "XZQH_DS_B",
+		  "minzoom": 8,
+		  "maxzoom":9,
+		  "layout": {
+		  },
+		  "paint": {
+			"fill-color": ["match",["to-number", ["get", "distance"]],[800],"#404040",[1600],"#666666","#000000"],
+		  "fill-opacity": ["interpolate",["linear"],["zoom"],8,1]
+		  }
+		}, 
+		{
+		  "id": "XZQH_XZJXZJX_L_XZ",
+		  "type": "line",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "XZQH_XZJXZJX_L_XZ",
+		  "filter":["match", ["get", "JXLX"], ["乡镇界"], true,false ],
+		  "minzoom": 10,
+		  "maxzoom":14,
+		  "layout": {},
+		  "paint": {
+			  "line-color": ["interpolate",["linear"],["zoom"],10,"#454545",16,"#696969"],
+			  "line-width": ["interpolate",["linear"],["zoom"],10,0.8, 12,1, 16,2],
+			  "line-dasharray": [
+				"step",
+				["zoom"],
+				["literal", [2, 2]],
+				10,
+				["literal", [4, 4]],
+				12,
+				["literal", [6, 6]]
+			  ]
+		  }
+		},
+		{
+		  "id": "XZQH_XZJXZJX_L_QX",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "XZQH_XZJXZJX_L",
+		  "filter":["match", ["get", "JXLX"], ["区县界"], true,false ],
+		  "minzoom": 11,
+		  "layout": {},
+		  "paint": {
+			  "line-color": ["interpolate",["linear"],["zoom"],10,"#454545",14,"#696969"],
+			  "line-width": ["interpolate",["linear"],["zoom"],8,0.8, 10,1, 12,1.5, 16,2.5],
+			  "line-dasharray": [
+				"step",
+				["zoom"],
+				["literal", [2, 2]],
+				8,
+				["literal", [4, 4]],
+				10,
+				["literal", [6, 6]],
+				12,
+				["literal", [8, 8]]
+			  ]
+		  }
+		},
+  
+		{
+		  "id": "XZQH_XZJXZJX_L_DS",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "XZQH_XZJXZJX_L",
+		  "filter":["match", ["get", "JXLX"], ["地市界"], true,false],
+		  "minzoom": 11,
+		  "layout": {},
+		  "paint": {
+			  "line-color": ["interpolate",["linear"],["zoom"],10,"#454545",12,"#696969"],
+			  "line-width": ["interpolate",["linear"],["zoom"],8,1.2, 10,1.5, 12,2 ,16,3],
+			  "line-dasharray": [
+				  "step",
+				  ["zoom"],
+				  ["literal", [3.5, 1, 0.5, 1, 0.5]],
+				  8,
+				  ["literal", [7, 2, 1, 2, 1]],
+				  16,
+				  ["literal", [10.5, 3, 1.5, 3, 1.5]]
+			  ]
+		  }
+		},
+  
+		{
+		  "id": "XZQH_XZJXZJX_L_QXJH",
+		  "type": "line",
+		  "source": "XZQH_XZJXZJX_L_QXJH",
+		  "source-layer": "XZQH_XZJXZJX_L_QXJH",
+		  "minzoom": 8,
+		  "maxzoom":11,
+		  "layout": {},
+		  "paint": {
+			  "line-color": ["interpolate",["linear"],["zoom"],10,"#454545",14,"#696969"],
+			  "line-width": ["interpolate",["linear"],["zoom"],8,0.8, 10,1],
+			  "line-dasharray": [
+				"step",
+				["zoom"],
+				["literal", [2, 2]],
+				8,
+				["literal", [4, 4]],
+				10,
+				["literal", [6, 6]],
+				12,
+				["literal", [8, 8]]
+			  ]
+		  }
+		},
+  
+		{
+		  "id": "XZQH_XZJXZJX_L_DSJH",
+		  "type": "line",
+		  "source": "XZQH_XZJXZJX_L_DSJH",
+		  "source-layer": "XZQH_XZJXZJX_L_DSJH",
+		  "minzoom": 8,
+		  "maxzoom":11,
+		  "layout": {},
+		  "paint": {
+			  "line-color": ["interpolate",["linear"],["zoom"],10,"#454545",12,"#696969"],
+			  "line-width": ["interpolate",["linear"],["zoom"],8,1.2, 10,1.5],
+			  "line-dasharray": [
+				  "step",
+				  ["zoom"],
+				  ["literal", [3.5, 1, 0.5, 1, 0.5]],
+				  8,
+				  ["literal", [7, 2, 1, 2, 1]],
+				  16,
+				  ["literal", [10.5, 3, 1.5, 3, 1.5]]
+			  ]
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_ZYGL_Case_S",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["'专用公路"], true,false ],
+		  "minzoom": 11,
+		  "maxzoom": 12,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": 0.5          
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_XID_Case_S",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["'乡道"], true,false ],
+		  "minzoom": 11,
+		  "maxzoom": 12,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": 0.5          
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_ZL_Case_S",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_CSDL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["支路"], true,false ],
+		  "minzoom": 11,
+		  "maxzoom": 12,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": 0.5          
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_ZGD_Case_S",
+		  "type": "line",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "DLJT_CSDL_L_10",
+		  "filter": ["match", ["get", "LX"],   ["主干道"], true,false ],
+		  "minzoom": 10,
+		  "maxzoom": 11,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": 0.5     
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_KSL_S",
+		  "type": "line",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "DLJT_CSDL_L_10",
+		  "filter": ["match", ["get", "LX"],   ["快速路"], true,false ],
+		  "minzoom": 9,
+		  "maxzoom": 9.5,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": 0.5     
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_GSD_S",
+		  "type": "line",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "filter": ["all",
+			["match", ["get", "JSDJ"], ["高速公路"], false,true ],
+			["match", ["get", "LX"],   ["国道","省道"], true,false ]
+		  ],
+		  "minzoom": 8,
+		  "maxzoom": 9,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": 0.5     
+		  }
+		},
+		{
+		  "id": "DLJT_YL_L_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_13",
+		  "source-layer": "DLJT_YL_L",
+		  "minzoom": 13,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": [
+			  "interpolate",
+			  ["linear"],
+			  ["zoom"],
+			  12,
+			  ["match",["get", "LX"],["快速路"],4,["主干道"],4,["国道"],4,["省道"],4,["次干道"],2,["县道"],2,["支路"],0,1],
+			  14,
+			  ["match",["get", "LX"],["快速路"],6,["主干道"],6,["国道"],6,["省道"],6,["次干道"],4,["县道"],4,["支路"],2,1],
+			  18,
+			  ["match",["get", "LX"],["快速路"],10,["主干道"],10,["国道"],10,["省道"],10,["次干道"],8,["县道"],8,["支路"],6,1]
+	  
+		  ]
+						   
+		  }
+		},
+		{
+		  "id": "DLJT_XCDL_L_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_12",
+		  "source-layer": "DLJT_XCDL_L",
+		  "minzoom": 12,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 12,3, 14,6, 16,16, 18,22]
+						   
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_ZYGL_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["专用公路"], true,false ],
+		  "minzoom": 12,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 12,3, 14,6, 16,16, 18,22]
+						   
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_XID_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["乡道"], true,false ],
+		  "minzoom": 12,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 12,3, 14,6, 16,16 ,18,22]
+						   
+		  }
+		},
+		
+		{
+		  "id": "DLJT_CSDL_L_ZL_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_CSDL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["支路"], true,false ],
+		  "minzoom": 12,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 12,3, 14,6, 16,16 ,18,22]
+						   
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_XD_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["县道"], true,false ],
+		  "minzoom": 11,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 11,3, 12,5, 14,8, 16,18 ,18,24]
+						   
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_CGD_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_CSDL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["次干道"], true,false ],
+		  "minzoom": 11,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 11,3, 12,5, 14,8, 16,18, 18,24]
+						   
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_ZGD_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "DLJT_CSDL_L_10",
+		  "filter": ["match", ["get", "LX"],   ["主干道"], true,false ],
+		  "minzoom": 11,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0,11,5, 12,7, 14,10, 16,20, 18,26]
+						   
+		  }
+		},
+		
+		{
+		  "id": "DLJT_GL_L_SD_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "filter": ["all",
+			["match", ["get", "JSDJ"], ["高速公路"], false,true ],
+			["match", ["get", "LX"],   ["省道"], true,false ]
+		  ],
+		  "minzoom": 9,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 8,1.5, 9,3, 10,5, 12,7, 14,10, 16,20, 18,26]
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_GD_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "filter": ["all",
+			["match", ["get", "JSDJ"], ["高速公路"], false,true ],
+			["match", ["get", "LX"],   ["国道"], true,false ]
+		  ],
+		  "minzoom": 9,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 8,1.5, 9,3, 10,5, 12,7, 14,10, 16,20 ,18,26]
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_KSL_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "DLJT_CSDL_L_10",
+		  "filter": ["match", ["get", "LX"],   ["快速路"], true,false ],
+		  "minzoom": 9.5,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 8,1.5, 9,3, 10,5, 12,7, 14,10, 16,20, 18,26]
+		  }
+		},
+		{
+		  "id": "DLJT_ZD_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_13",
+		  "source-layer": "DLJT_ZD_L",
+		  "minzoom": 13,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 8,3, 9,5, 10,7, 12,3, 14,7, 18,10]
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_GSGL_Case",
+		  "type": "line",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "filter":["match", ["get", "JSDJ"], ["高速公路"], true,false ],
+		  "minzoom": 8,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 8,3, 9,5, 10,7, 12,9, 14,12, 16,22 ,18,28]
+		  }
+		},
+		{
+		  "id": "DLJT_YL_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_13",
+		  "source-layer": "DLJT_YL_L",
+		  "minzoom": 13,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": [
+			  "interpolate",
+			  ["linear"],
+			  ["zoom"],
+			  12,
+			  ["match",["get", "LX"],["快速路"],2,["主干道"],2,["国道"],2,["省道"],2,["次干道"],1,["县道"],1,["支路"],0,1],
+			  14,
+			  ["match",["get", "LX"],["快速路"],4,["主干道"],4,["国道"],4,["省道"],4,["次干道"],2,["县道"],2,["支路"],1,1],
+			  18,
+			  ["match",["get", "LX"],["快速路"],8,["主干道"],8,["国道"],8,["省道"],8,["次干道"],6,["县道"],6,["支路"],4,1]
+	  
+		  ]
+						   
+		  }
+		},
+		{
+		  "id": "DLJT_XCDL_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_12",
+		  "source-layer": "DLJT_XCDL_L",
+		  "minzoom": 12,
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 12,1.5, 14,4, 16,12, 18,18]
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_ZYGL",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "minzoom": 12,
+		  "filter": ["match", ["get", "LX"],   ["专用公路"], true,false ],
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 12,1.5, 14,4, 16,12 ,18,18]
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_XID",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "minzoom": 12,
+		  "filter": ["match", ["get", "LX"],   ["乡道"], true,false ],
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 12,1.5 ,14,4, 16,12 ,18,18]
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_XD_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "minzoom": 11,
+		  "filter": ["match", ["get", "LX"],   ["县道"], true,false ],
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 11,1.5, 12,3, 14,6, 16,14 ,18,20]
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_ZL_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_CSDL_L_11",
+		  "minzoom": 12,
+		  "filter": ["match", ["get", "LX"],   ["支路"], true,false ],
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 12,1.5, 14,4, 16,14 ,18,20]
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_CGD_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_CSDL_L_11",
+		  "minzoom": 11,
+		  "filter": ["match", ["get", "LX"],   ["次干道"], true,false ],
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 11,1.5 ,12,3, 14,6, 16,16, 18,22]
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_ZGD_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "DLJT_CSDL_L_10",
+		  "minzoom": 11,
+		  "filter": ["match", ["get", "LX"],   ["主干道"], true,false ],
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 11,3.5, 12,5, 14,8, 16,18 ,18,24]
+		  }
+		},
+		
+		{
+		  "id": "DLJT_GL_L_SD_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "minzoom": 9,
+		  "filter": ["all",
+			["match", ["get", "JSDJ"], ["高速公路"], false,true ],
+			["match", ["get", "LX"],   ["省道"], true,false ]
+		  ],
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 9,2, 10,3, 12,5, 14,8, 16,18, 18,24]
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_GD_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "filter": ["all",
+			["match", ["get", "JSDJ"], ["高速公路"], false,true ],
+			["match", ["get", "LX"],   ["国道"], true,false ]
+		  ],
+		  "minzoom": 9,
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 9,2, 10,3, 12,5, 14,8, 16,18, 18,24]
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_KSL_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "DLJT_CSDL_L_10",
+		  "minzoom": 9.5,
+		  "filter": ["match", ["get", "LX"],   ["快速路"], true,false ],
+		  "layout": {"line-cap": "round","line-join": "round"},
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 10,3, 12,5, 14,8, 16,18 ,18,24]
+		  }
+		},
+		{
+		  "id": "DLJT_ZD_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_13",
+		  "source-layer": "DLJT_ZD_L",
+		  "minzoom": 13,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 8,1.5, 9,3, 10,5, 12,1.5, 14,5, 18,8]
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_GSGL_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "filter":["match", ["get", "JSDJ"], ["高速公路"], true,false ],
+		  "minzoom": 8,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#454545",
+			"line-width": ["interpolate",["linear"],["zoom"],0,0, 8,1.5, 9,3, 10,5, 12,7, 14,10, 16,20,18,26]
+		  }
+		},
+		
+		{
+		  "id": "DLBX_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "DLBX_L",
+		  "minzoom": 16,
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#292929",
+			"line-width": {
+			  "stops": [[16,
+			  1.8],
+			  [18,
+			 2],
+			  [22,
+			  2.5]]
+			}
+		  }
+		},
+		{
+		  "id": "DLM_P",
+		  "type": "fill",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "DLM_P",
+		  "filter": ["match", ["get", "Type"], ["桥梁"], false,true ],
+		  "minzoom": 16,
+		  "layout": {
+		  },
+		  "paint": {
+			"fill-color": "#454545"
+		  }
+		},
+		{
+		  "id": "DLMZYS_P",
+		  "type": "fill",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "DLMZYS_P",
+		  "minzoom": 17,
+		  "layout": {},
+		  "paint": {
+			"fill-color": [
+			  "match",
+			  ["get", "TYPE"],
+			  ["主干道"],
+			  "#454545",
+			  ["街边小公园"],
+			  "#1F1F1F",
+			  ["人行道"],
+			  "#404040",
+			  ["安全岛"],
+			  "#404040",
+			  "#454545"
+		  ],
+		  "fill-outline-color": "hsla(0, 0%, 0%, 0)"
+		  }  
+		},
+		{
+		  "id": "TCX_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "TCX_L",
+		  "minzoom": 17,
+		  "layout": {},
+		  "paint": {
+			"line-color": "#808080",
+			"line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "DZCD_L_SX",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "DZCD_L",
+		  "minzoom": 17,
+		  "filter": ["match", ["get", "TYPE"], ["白色实线"], true, false],
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#808080",
+			"line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "DZCD_L_XX",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "DZCD_L",
+		  "minzoom": 17,
+		  "filter": ["match", ["get", "TYPE"], ["白色虚线"], true, false],
+		  "layout": {
+			"line-join": "bevel"
+		  },
+		  "paint": {
+			"line-color": "#808080",
+			"line-dasharray": [3,
+			3],
+			"line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "BMX_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "BMX_L",
+		  "minzoom": 17,
+		  "layout": {
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#808080",
+			"line-dasharray": [0.1,
+			0.25],
+			"line-width": 25
+		  }
+		},
+		{
+		  "id": "CDX_L_SX",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "CDX_L",
+		  "minzoom": 17,
+		  "filter": ["match", ["get", "Type"], ["白色实线","黄色实线"], true, false],
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": [
+			  "match",
+			  ["get", "Type"],
+			  ["白色实线"],
+			  "#808080",
+			  ["黄色实线"],
+			  "#805500",
+			  "hsl(239, 81%, 62%)"
+		  ],
+			"line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "CDX_L_doubleS",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "CDX_L",
+		  "minzoom": 17,
+		  "filter": ["match", ["get", "Type"], ["双黄实线"], true, false],
+		  "layout": {},  
+		  "paint": {
+			  "line-color": "#805500",
+			  "line-gap-width": 3,
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "CDX_L_doubleX",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "CDX_L",
+		  "minzoom": 17,
+		  "filter": ["match", ["get", "Type"], ["双黄虚线"], true, false],
+		  "layout": {},
+		  "paint": {
+			  "line-color": "#805500",
+			  "line-width": 2,
+			  "line-dasharray": [6, 6],
+			  "line-gap-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "CDX_L_XX",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "CDX_L",
+		  "minzoom": 17,
+		  "filter": ["match", ["get", "Type"], ["白色虚线","黄色虚线"], true, false],
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": [
+			  "match",
+			  ["get", "Type"],
+			  ["白色虚线"],
+			  "#808080",
+			  ["黄色虚线"],
+			  "#805500",
+			  "hsl(239, 81%, 62%)"
+		  ],
+		  "line-dasharray": [6,
+			6],
+			"line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "JTBX_L_SX",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "JTBX_L",
+		  "filter": ["match", ["get", "LB"], ["白色实线","菱形中心圈","倒三角","白色菱形线"], true, false],
+		  "minzoom": 17,
+		  "layout": {},
+		  "paint": {
+			"line-color": "#808080",
+			"line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "JTBX_L_sbxx",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "JTBX_L",
+		  "minzoom": 17,
+		  "filter": ["match", ["get", "LB"], ["双白虚线"], true, false],
+		  "layout": {},
+		  "paint": {
+			  "line-color": "#808080",
+			  "line-dasharray": [6, 6],
+			  "line-gap-width": 3,
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "JTBX_L_HSSX",
+		  "type": "line",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "JTBX_L",
+		  "minzoom": 17,
+		  "filter": ["match", ["get", "TYPE"], ["黄色实线"], true, false],
+		  "layout": {
+			"line-cap": "round",
+			"line-join": "round"
+		  },
+		  "paint": {
+			"line-color": "#805500",
+			"line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+		  }
+		},
+		{
+		  "id": "JTBX_L_dxx",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "JTBX_L",
+		  "filter": ["match", ["get", "LB"], ["左转","右转","直行或右转","直行或左转","左转或掉头","直行"], true, false],
+		  "minzoom": 17,
+		  "layout": {
+			"symbol-placement": "line",
+			"icon-image":  ["get", "LB"],
+			"icon-rotation-alignment": "map",
+			"icon-allow-overlap": true
+		  },
+		  "paint": {}
+		},
+		{
+		  "id": "DLMZYS_LHGLD_P",
+		  "type": "fill-extrusion",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "DLMZYS_LHGLD_P",
+		  "minzoom": 17,
+		  "layout": {},
+		  "paint": {
+			  "fill-extrusion-height": 0.5,
+			  "fill-extrusion-color":  "#1F1F1F",
+			  "fill-extrusion-opacity": 1,
+			  "fill-extrusion-vertical-gradient": false
+		  }  
+		},
+		{
+		  "id": "DLMZYS_QT_P",
+		  "type": "fill-extrusion",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "DLMZYS_QT_P",
+		  "minzoom": 17,
+		  "layout": {},
+		  "paint": {
+			
+			  "fill-extrusion-height": 0.5,
+			  "fill-extrusion-color":  "#1F1F1F",
+			  "fill-extrusion-opacity": 1,
+			  "fill-extrusion-vertical-gradient": false
+		  
+		  }  
+		},
+		{
+		  "id": "JTBX_L_DMZ",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_JXH",
+		  "source-layer": "JTBX_L",
+		  "filter": ["match", ["get", "LX"], ["地面字"], true, false],
+		  "minzoom": 17,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["MicrosoftYaHeiBold"],
+			"text-size": [
+			  "interpolate",
+			  ["linear"],
+			  ["zoom"],
+			  19,
+			  12.5,
+			  22,
+			  13.5
+		  ],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "LabelName"]],
+		   
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color":[
+			  "match",
+			  ["get", "COLOR"],
+			  ["白色"],
+			  "#808080",
+			  ["黄色"],
+			  "#805500",
+			  "#000000"
+		  ]
+			
+		  }
+		},
+		{
+			"id": "SIP_JXH_DL",
+			"type": "fill",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_DL",
+			"minzoom": 16,
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#454545"
+			}
+		  },
+		  
+		  {
+			"id": "SIP_JXH_TCX",
+			"type": "line",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_TCX",
+			"minzoom": 16,
+			"layout": {},
+			"paint": {
+			  "line-color": "#808080",
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "SIP_JXH_DZCD_SX",
+			"type": "line",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_DZCD",
+			"minzoom": 16,
+			"filter":["==", ["to-number", ["get", "RuleID"]], 1],
+			"layout": {
+			  "line-cap": "round",
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": "#808080",
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "SIP_JXH_DZCD_XX",
+			"type": "line",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_DZCD",
+			"minzoom": 16,
+			"filter":["==", ["to-number", ["get", "RuleID"]], 2],
+			"layout": {
+			  "line-join": "bevel"
+			},
+			"paint": {
+			  "line-color": "#808080",
+			  "line-dasharray": [3,
+			  3],
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "SIP_JXH_BMX",
+			"type": "line",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_BMX",
+			"minzoom": 16,
+			"layout": {
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": "#808080",
+			  "line-dasharray": [0.1,
+			  0.25],
+			  "line-width": [
+				"interpolate",
+				["linear"],
+				["zoom"],
+				17,["*", ["to-number", ["get", "宽度"]], 2],
+				22,["*", ["to-number", ["get", "宽度"]], 3]]
+			}
+		  },
+		  {
+			"id": "SIP_JXH_CDX_SX",
+			"type": "line",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_CDX",
+			"minzoom": 16,
+			"filter": ["match", ["get", "类型"], ["白色实线","黄色实线"], true, false],
+			"layout": {
+			  "line-cap": "round",
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": [
+				"match",
+				["get", "类型"],
+				["白色实线"],
+				"#808080",
+				["黄色实线"],
+				"#805500",
+				"hsl(239, 81%, 62%)"
+			],
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "SIP_JXH_CDX_XX",
+			"type": "line",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_CDX",
+			"minzoom": 16,
+			"filter": ["match", ["get", "类型"], ["白色虚线","白色虚线2","白色虚线短","黄色虚线","黄色虚实线"], true, false],
+			"layout": {
+			  "line-cap": "round",
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": [
+				"match",
+				["get", "类型"],
+				["白色虚线","白色虚线2","白色虚线短"],
+				"#808080",
+				["黄色虚线","黄色虚实线"],
+				"#805500",
+				"hsl(239, 81%, 62%)"
+			],
+			"line-dasharray": [6,
+			  6],
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "SIP_JXH_XCDXX",
+			"type": "symbol",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_XCDXX",
+			"filter": ["match", ["get", "Type"], ["左转","右转","直行或右转","直行或左转","左转或掉头","直行"], true, false],
+			"minzoom": 16,
+			"layout": {
+			  "symbol-placement": "line",
+			  "icon-image":  ["get", "Type"],
+			  "icon-rotation-alignment": "map",
+			  "icon-allow-overlap": true
+			},
+			"paint": {}
+		  },
+		  {
+			"id": "SIP_JXH_LHGLD",
+			"type": "fill-extrusion",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_LHGLD",
+			"minzoom": 16,
+			"layout": {},
+			"paint": {
+				"fill-extrusion-height": 0.5,
+				"fill-extrusion-color":  "#1F1F1F",
+				"fill-extrusion-opacity": 1,
+				"fill-extrusion-vertical-gradient": false
+			}  
+		  },
+		  {
+			"id": "SIP_JXH_RXD",
+			"type": "fill-extrusion",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_JXH_RXD",
+			"minzoom": 16,
+			"layout": {},
+			"paint": {
+				"fill-extrusion-height": 0.5,
+				"fill-extrusion-color":  "#404040",
+				"fill-extrusion-opacity": 1,
+				"fill-extrusion-vertical-gradient": false
+			}  
+		  },
+		  {
+			"id": "RMLJXH_ROAD",
+			"type": "fill",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_ROAD",
+			"minzoom": 16,
+			"layout": {
+			},
+			"paint": {
+			  "fill-color": "#454545"
+			}
+		  },
+		  
+		  {
+			"id": "RMLJXH_TCX",
+			"type": "line",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_TCX",
+			"minzoom": 16,
+			"layout": {},
+			"paint": {
+			  "line-color": "#808080",
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "RMLJXH_DZCDX_SX",
+			"type": "line",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_DZCDX",
+			"minzoom": 16,
+			"filter":["==", ["to-number", ["get", "RuleID"]], 1],
+			"layout": {
+			  "line-cap": "round",
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": "#808080",
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "RMLJXH_DZCDX_XX",
+			"type": "line",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_DZCDX",
+			"minzoom": 16,
+			"filter":["==", ["to-number", ["get", "RuleID"]], 2],
+			"layout": {
+			  "line-join": "bevel"
+			},
+			"paint": {
+			  "line-color": "#808080",
+			  "line-dasharray": [3,
+			  3],
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "RMLJXH_BMX",
+			"type": "line",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_BMX",
+			"minzoom": 16,
+			"layout": {
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": "#808080",
+			  "line-dasharray": [0.1,
+			  0.25],
+			  "line-width": [
+				"interpolate",
+				["linear"],
+				["zoom"],
+				17,["*", ["to-number", ["get", "WIDTH"]], 2],
+				22,["*", ["to-number", ["get", "WIDTH"]], 3]]
+			}
+		  },
+		  {
+			"id": "RMLJXH_CDXSX",
+			"type": "line",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_CDX",
+			"minzoom": 16,
+			"filter": ["match", ["get", "类型"], ["白色实线","黄色实线"], true, false],
+			"layout": {
+			  "line-cap": "round",
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": [
+				"match",
+				["get", "类型"],
+				["白色实线"],
+				"#808080",
+				["黄色实线"],
+				"#805500",
+				"hsl(239, 81%, 62%)"
+			],
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "RMLJXH_CDX_XX",
+			"type": "line",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_CDX",
+			"minzoom": 16,
+			"filter": ["match", ["get", "类型"], ["白色虚线","白色虚线2","白色虚线短","黄色虚线","黄色虚实线"], true, false],
+			"layout": {
+			  "line-cap": "round",
+			  "line-join": "round"
+			},
+			"paint": {
+			  "line-color": [
+				"match",
+				["get", "类型"],
+				["白色虚线","白色虚线2","白色虚线短"],
+				"#808080",
+				["黄色虚线","黄色虚实线"],
+				"#805500",
+				"hsl(239, 81%, 62%)"
+			],
+			"line-dasharray": [6,
+			  6],
+			  "line-width": ["interpolate",["linear"],["zoom"],17,1.5, 18,2]
+			}
+		  },
+		  {
+			"id": "RMLJXH_XCDXX",
+			"type": "symbol",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_XCDXX",
+			"filter": ["match", ["get", "Type"], ["左转","右转","直行或右转","直行或左转","左转或掉头","直行"], true, false],
+			"minzoom": 16,
+			"layout": {
+			  "symbol-placement": "line",
+			  "icon-image":  ["get", "Type"],
+			  "icon-rotation-alignment": "map",
+			  "icon-allow-overlap": true
+			},
+			"paint": {}
+		  },
+		  {
+			"id": "RMLJXH_LHGLD",
+			"type": "fill-extrusion",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_LHGLD",
+			"minzoom": 16,
+			"layout": {},
+			"paint": {
+				"fill-extrusion-height": 0.5,
+				"fill-extrusion-color":  "#1F1F1F",
+				"fill-extrusion-opacity": 1,
+				"fill-extrusion-vertical-gradient": false
+			}  
+		  },
+		  {
+			"id": "RMLJXH_RXD",
+			"type": "fill-extrusion",
+			"source": "RMLJXH",
+			"source-layer": "RMLJXH_RXD",
+			"minzoom": 16,
+			"layout": {},
+			"paint": {
+				"fill-extrusion-height": 0.5,
+				"fill-extrusion-color":  "#404040",
+				"fill-extrusion-opacity": 1,
+				"fill-extrusion-vertical-gradient": false
+			}  
+		  },
+
+		  {
+			"id": "GDJT_TLX_L_Case",
+			"type": "line",
+			"source": "SZ_BaseMap_11",
+			"source-layer": "GDJT_TLX_L",
+			"minzoom": 12,
+			"layout": {},
+			"paint": {
+			  "line-width": ["interpolate",["linear"],["zoom"],0,0, 11,0.6, 12,2.4, 14,3, 18,4],
+				"line-color":"#414141"
+			 }
+		   },
+		   {
+			"id": "GDJT_TLX_L",
+			"type": "line",
+			"source": "SZ_BaseMap_11",
+			"source-layer": "GDJT_TLX_L",
+			"minzoom": 12,
+			"layout": {},
+			"paint": {
+			  "line-width": ["interpolate",["linear"],["zoom"],0,0, 12,2, 14,2.6, 18,3.6],
+			  "line-color":"#8D8D8D",
+			  "line-dasharray": [
+				"step",
+				["zoom"],
+				["literal", [4, 4]],
+				11,
+				["literal", [6, 6]],
+				22,
+				["literal", [8, 8]]
+			  ]
+			 }
+		   },
+		   {
+			  "id": "GDJT_GDJTX_L_Case",
+			  "type": "line",
+			  "source": "SZ_BaseMap_11",
+			  "source-layer": "GDJT_GDJTX_L",
+			  "filter": ["match", ["get", "BZMC"], ["1号线","2号线","3号线","4号线","4号线支线"], true,false ],
+			  "minzoom": 12,
+			  "layout": {},
+			  "paint": {
+				"line-width": ["interpolate",["linear"],["zoom"],0,0, 11,1, 12,3, 14,4, 18,6],
+				  "line-color":"#292929"
+			   }
+			 },
+		  {
+			"id": "GDJT_GDJTX_L",
+			"type": "line",
+			"source": "SZ_BaseMap_11",
+			"source-layer": "GDJT_GDJTX_L",
+			"filter": ["match", ["get", "BZMC"], ["1号线","2号线","3号线","4号线","4号线支线"], true,false ],
+			"minzoom": 12,
+			"layout": {},
+			"paint": {
+			  "line-width": ["interpolate",["linear"],["zoom"],0,0, 11,1, 12,1.5, 14,2.5, 18,4],
+				"line-color":"#595959"
+			 }
+		   },
+		{
+      "id": "SX_SX_PT",
+      "type": "symbol",
+      "source": "SX_SX_PT",
+      "source-layer": "SX_SX_PT",
+      "minzoom":18,
+      "layout": {
+          "text-line-height": 1.1,
+          "text-size": ["interpolate",["linear"],["zoom"], 10,10, 14,12,  22,14],
+          "text-max-angle": 38,
+          "text-font": ["MicrosoftYaHeiRegular"],
+          "text-padding": 2,
+          "text-anchor": "center",
+          "text-field": ["to-string", ["get", "BZMC"]],
+          "text-max-width": 8
+      },
+      "paint": {
+          "text-color":"#616161",
+          "text-halo-width": 1
+      }
+    },
+     {
+      "id": "SX_SX_PT_100000",
+      "type": "symbol",
+      "source": "SX_SX_PT_100000",
+      "source-layer": "SX_SX_PT_100000",
+      "minzoom":14,
+      "maxzoom":18,
+      "layout": {
+          "text-line-height": 1.1,
+          "text-size": ["interpolate",["linear"],["zoom"], 10,10, 14,12,  22,14],
+          "text-max-angle": 38,
+          "text-font": ["MicrosoftYaHeiRegular"],
+          "text-padding": 2,
+          "text-anchor": "center",
+          "text-field": ["to-string", ["get", "BZMC"]],
+          "text-max-width": 8
+      },
+      "paint": {
+          "text-color":[
+            "step",
+            ["zoom"],
+            "hsla(0, 72%, 53%, 0)",
+            14,
+            [ "case",[">=", ["to-number", ["get", "MJ"]], 10000],"#616161","hsla(0, 72%, 53%, 0)"],
+            16,"#616161"
+        ],
+          "text-halo-width": 1
+      }
+    },
+     {
+      "id": "SX_SX_PT_200000",
+      "type": "symbol",
+      "source": "SX_SX_PT_200000",
+      "source-layer": "SX_SX_PT_200000",
+      "minzoom":12,
+      "maxzoom":14,
+      "layout": {
+          "text-line-height": 1.1,
+          "text-size": ["interpolate",["linear"],["zoom"], 10,10, 14,12,  22,14],
+          "text-max-angle": 38,
+          "text-font": ["MicrosoftYaHeiRegular"],
+          "text-padding": 2,
+          "text-anchor": "center",
+          "text-field": ["to-string", ["get", "BZMC"]],
+          "text-max-width": 8
+      },
+      "paint": {
+          "text-color":[
+            "step",
+            ["zoom"],
+            "hsla(0, 72%, 53%, 0)",
+            12,
+            [ "case",[">=", ["to-number", ["get", "MJ"]], 1000000],"#616161","hsla(0, 72%, 53%, 0)"],
+            14,
+            [ "case",[">=", ["to-number", ["get", "MJ"]], 10000],"#616161","hsla(0, 72%, 53%, 0)"],
+            16,"#616161"
+        ],
+          "text-halo-width": 1
+      }
+    },
+  
+    {
+      "id": "SX_SX_PT_JH_Label",
+      "type": "symbol",
+      "source": "SX_SX_PT_300000",
+      "source-layer": "SX_SX_PT_300000",
+      "filter":[">=", ["to-number", ["get", "MJ"]], 2000000],
+      "minzoom":11,
+      "maxzoom":12,
+      "layout": {
+          "text-line-height": 1.1,
+          "text-size": ["interpolate",["linear"],["zoom"],10,10, 14,12],
+          "text-max-angle": 38,
+          "text-font": ["MicrosoftYaHeiRegular"],
+          "text-padding": 2,
+          "text-anchor": "center",
+          "text-field": ["to-string", ["get", "BZMC"]],
+          "text-max-width": 8
+      },
+      "paint": {
+          "text-color":"#616161",
+          "text-halo-width": 1
+      }
+    },
+  
+    {
+      "id": "SX_SX_PT_1000000_Label",
+      "type": "symbol",
+      "source": "SX_SX_PT_300000",
+      "source-layer": "SX_SX_PT_300000",
+      "filter":[">=", ["to-number", ["get", "MJ"]], 5000000],
+      "minzoom":10,
+      "maxzoom":11,
+      "layout": {
+          "text-line-height": 1.1,
+          "text-size": ["interpolate",["linear"],["zoom"],10,10, 14,12],
+          "text-max-angle": 38,
+          "text-font": ["MicrosoftYaHeiRegular"],
+          "text-padding": 2,
+          "text-anchor": "center",
+          "text-field": ["to-string", ["get", "BZMC"]],
+          "text-max-width": 8
+      },
+      "paint": {
+          "text-color":"#616161",
+          "text-halo-width": 1
+      }
+    },
+    {
+      "id": "SX_SX_PT_6000000_Label",
+      "type": "symbol",
+      "source": "SX_SX_PT_300000",
+      "source-layer": "SX_SX_PT_300000",
+      "minzoom":8,
+      "maxzoom":10,
+      "filter":[">=", ["to-number", ["get", "MJ"]], 20000000],
+      "layout": {
+          "text-line-height": 1.1,
+          "text-size": ["interpolate",["linear"],["zoom"],8,9, 10,10],
+          "text-max-angle": 38,
+          "text-font": ["MicrosoftYaHeiRegular"],
+          "text-padding": 2,
+          "text-anchor": "center",
+          "text-field": ["to-string", ["get", "BZMC"]],
+          "text-max-width": 8
+      },
+      "paint": {
+          "text-color":"#616161",
+          "text-halo-width": 1
+      }
+    },
+		 {
+		  "id": "DLJT_XCDL_L_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_12",
+		  "source-layer": "DLJT_XCDL_L",
+		  "minzoom": 12,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"], 12,9, 14,10, 18,12],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0,  12,500, 13,500,  16,900],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		 {
+		  "id": "DLJT_GL_L_ZYGL_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["专用公路"], true,false ],
+		  "minzoom": 12,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"], 12,9, 14,10, 18,12],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0,  12,500, 13,500,  16,900],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		 {
+		  "id": "DLJT_GL_L_XID_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11",
+		  "filter": ["match", ["get", "LX"],   ["乡道"], true,false ],
+		  "minzoom": 12,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"], 12,9, 14,10, 18,12],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0,  12,500, 13,500,  16,900],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		 {
+		  "id": "DLJT_CSDL_L_ZL_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_CSDL_L_11",
+		  "filter": ["match", ["get", "LX"], ["支路"], true,false ],
+		  "minzoom": 12,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"], 12,9, 14,10, 18,12],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0,  12,500, 13,500,  16,900],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_XD_BH",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_GL_L_11s",
+		  "minzoom": 12,
+		  "filter": ["match", ["get", "LX"],   ["县道"], true,false ],
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font": ["ArialBold"],
+			"text-size": ["interpolate",["linear"],["zoom"],10,9, 12,9, 14,9],
+			"text-field": ["to-string", ["get", "BH"]],
+			"text-offset": [0, 0.2],
+			"icon-image":"XD/省道/4",
+			"icon-rotation-alignment": "viewport",
+			"text-rotation-alignment": "viewport",
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0, 10,250, 11,500, 12,350, 13,550, 14,750, 16,900]
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		 {
+		  "id": "DLJT_CSDL_L_CGD_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "DLJT_CSDL_L_11",
+		  "filter": ["match", ["get", "LX"], ["次干道"], true,false ],
+		  "minzoom": 12,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"], 12,10,  16,12, 18,14],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],10,0.2, 11,0.1, 12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0, 10,250, 11,500, 12,350, 13,550, 14,750, 16,900],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_ZGD_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "DLJT_CSDL_L_10",
+		  "filter": ["match", ["get", "LX"], ["主干道"], true,false ],
+		  "minzoom": 11,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"], 10,9, 12,11,  14,12, 18,14],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],10,0.2, 11,0.1, 12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0, 10,250, 11,500, 12,350, 13,550, 14,750, 16,900],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		
+		{
+		  "id": "DLJT_GL_L_GSD_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "filter": ["all",["match", ["get", "JSDJ"], ["高速公路"], false,true],["match", ["get", "LX"],["国道","省道"],true,false]],
+		  "minzoom": 11,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"], 10,10, 12,12,  14,12, 18,14],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],10,0.2, 11,0.1, 12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0, 10,250, 11,300, 12,350, 13,550, 14,750],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "DLJT_CSDL_L_KSL_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_10",
+		  "source-layer": "DLJT_CSDL_L_10",
+		  "filter": ["match", ["get", "LX"], ["快速路"], true,false ],
+		  "minzoom": 11,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"], 10,10, 12,12,  14,12, 18,14],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],10,0.2, 11,0.1, 12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0, 10,250, 11,500, 12,350, 13,550, 14,750, 16,900],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_GSGL_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8",
+		  "filter":["match", ["get", "JSDJ"], ["高速公路"], true,false ],
+		  "minzoom": 8,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],15,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"],8,10, 10,12,  14,14, 18,16],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"],10,0.2, 11,0.1, 12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0, 10,250, 11,300, 12,350, 13,550, 14,750],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		
+		{
+		  "id": "DLJT_GL_L_SD_BH",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8s",
+		  "minzoom": 10,
+		  "filter": ["all",["match", ["get", "JSDJ"], ["高速公路"], false,true ],["match", ["get", "LX"],["省道"], true,false]],
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font": ["ArialBold"],
+			"text-size": ["interpolate",["linear"],["zoom"],10,9, 12,9, 14,9],
+			"text-field": ["to-string", ["get", "BH"]],
+			"text-offset": [0, 0.2],
+			"icon-image":"SD/省道/4",
+			"icon-rotation-alignment": "viewport",
+			"text-rotation-alignment": "viewport",
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0, 10,250, 11,500, 12,350, 13,550, 14,750, 16,900]
+		  },
+		  "paint": {
+			"text-color": "#4e4e4e"
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_GD_BH",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8s",
+		  "minzoom": 10,
+		  "filter": ["all",["match", ["get", "JSDJ"], ["高速公路"], false,true],["match", ["get", "LX"],["国道"],true,false]],
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font": ["ArialBold"],
+			"text-size": ["interpolate",["linear"],["zoom"],10,9, 12,9, 14,9],
+			"text-field": ["to-string", ["get", "BH"]],
+			"text-offset": [0, 0.2],
+			"icon-image":"GD/省道/4",
+			"icon-rotation-alignment": "viewport",
+			"text-rotation-alignment": "viewport",
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,0, 10,250, 11,500, 12,1000, 13,550, 14,750, 16,900]
+		  },
+		  "paint": {
+			"text-color": "#FFFFFF"
+		  }
+		},
+		
+		{
+		  "id": "DLJT_GL_L_SG",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8s",
+		  "minzoom": 8,
+		  "filter": ["all",
+			["match", ["get", "JSDJ"], ["高速公路"], true,false ],
+			["match", ["get", "LX"],   ["省道"], true,false ]
+		  ],
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font": ["ArialBold"],
+			"text-size": ["interpolate",["linear"],["zoom"],8,9, 13,10],
+			"text-field": ["to-string", ["get", "BH"]],
+			"text-offset": [0, 0.3],
+			"icon-image":[
+			  "step",
+			  ["zoom"],
+			  "",
+			  8,
+			  ["match",["get", "BH"],["S9","S5"],"GSGL_S/省道/2","GSGL_S/省道/3"],
+			  13,
+			  ["match",["get", "BH"],["S9","S5"],"GSGL_L/省道/3","GSGL_L/省道/4"]
+			],
+			"icon-rotation-alignment": "viewport",
+			"text-rotation-alignment": "viewport",
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,250,  11,400, 12,1000]
+		  },
+		  "paint": {
+			"text-color": "#FFFFFF"
+		  }
+		},
+		{
+		  "id": "DLJT_GL_L_GG",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "DLJT_GL_L_8s",
+		  "minzoom": 8,
+		  "filter": ["all",
+			["match", ["get", "JSDJ"], ["高速公路"], true,false ],
+			["match", ["get", "LX"],   ["国道"], true,false ]
+		  ],
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font": ["ArialBold"],
+			"text-size": ["interpolate",["linear"],["zoom"],8,9, 13,10],
+			"text-field": ["to-string", ["get", "BH"]],
+			"text-offset": [0, 0.3],
+			"icon-image":[
+			  "step",
+			  ["zoom"],
+			  "",
+			  8,
+			  ["match",["get", "BH"],["G2"],"GSGL_S/国道/2",["G50","G15"],"GSGL_S/国道/3",["G15W"],"GSGL_S/国道/5","GSGL_S/国道/6"],
+			  13,
+			  ["match",["get", "BH"],["G2"],"GSGL_L/国道/3",["G50","G15"],"GSGL_L/国道/4",["G15W"],"GSGL_L/国道/6","GSGL_L/国道/7"]
+			],
+			"icon-rotation-alignment": "viewport",
+			"text-rotation-alignment": "viewport",
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],8,250,  11,400,  12,1000]
+		  },
+		  "paint": {
+			"text-color": "#FFFFFF"
+		  }
+		},
+
+		{
+			"id": "QYDY_DK_PT",
+			"type": "symbol",
+			"source": "SZ_BaseMap_POI",
+			"source-layer": "QYDY_DK_PT",
+			"minzoom": 14,
+			"layout": {
+				"text-field": ["to-string", ["get", "BZMC"]],
+				"text-font":["step",["zoom"],[ "literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]
+				],
+				"text-size": ["interpolate",["linear"],["zoom"],14,10,18,12],
+				"text-padding": ["interpolate",["linear"],["zoom"],14,20,16,2]
+			},
+			"paint": {
+			  "text-color": [
+				"step",
+				["zoom"],
+				"hsla(0, 0%, 0%, 0)",
+				12,
+				["match",["get", "YTMC"],["城镇住宅用地"],"#8C8C8C","hsla(0, 83%, 58%, 0)"],
+				14,
+				"#8C8C8C"
+			  ],
+			  "text-halo-width": 1,
+			  "text-halo-color": "#0d0d0d"
+			  }
+		   },
+		
+		{
+		  "id": "GDJT_TLZQ_P",
+		  "type": "fill",
+		  "source": "SZ_BaseMap_15",
+		  "source-layer": "GDJT_TLZQ_P",
+		  "minzoom": 15,
+		  "layout": {},
+		  "paint": {
+			"fill-color":"#FFFFFF",
+			"fill-opacity":0.3,
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+		  }  
+		},
+		{
+		  "id": "GDJT_TLZQ_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_15",
+		  "source-layer": "GDJT_TLZQ_P",
+		  "minzoom": 15,
+		  "layout": {},
+		  "paint": {
+			"line-color":"#FFFFFF",
+			"line-opacity":0.6,
+			"line-width":1
+		  }  
+		},
+		{
+		  "id": "GDJT_GDJTZQ_P",
+		  "type": "fill",
+		  "source": "SZ_BaseMap_15",
+		  "source-layer": "GDJT_GDJTZQ_P",
+		  "minzoom": 15,
+		  "layout": {},
+		  "paint": {
+			"fill-color": "#FFFFFF",
+			"fill-opacity":["interpolate",["linear"],["zoom"],15,0.2,18,0.1],
+			"fill-outline-color": "hsla(0, 0%, 0%, 0)"
+		  }  
+		},
+		{
+		  "id": "GDJT_GDJTZQ_L",
+		  "type": "line",
+		  "source": "SZ_BaseMap_15",
+		  "source-layer": "GDJT_GDJTZQ_P",
+		  "minzoom": 15,
+		  "layout": {},
+		  "paint": {
+			  "line-color":  "#FFFFFF",
+			  "line-width": ["interpolate",["linear"],["zoom"],10,0.8, 12,1, 22,1.5],
+			  "line-opacity":["interpolate",["linear"],["zoom"],15,0.4,18,0.2],
+			  "line-dasharray": [
+				"step",
+				["zoom"],
+				["literal", [2, 2]],
+				18,
+				["literal", [4, 4]],
+				22,
+				["literal", [6, 6]]
+			  ]
+		  }
+		},
+		{
+		  "id": "GDJT_GDJTX_L_Label",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "GDJT_GDJTX_L",
+		  "filter": ["match", ["get", "BZMC"], ["1号线","2号线","3号线","4号线","4号线支线"], true,false ],
+		  "minzoom": 12,
+		  "layout": {
+			"symbol-placement": "line",
+			"text-font":["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],14,["literal",["MicrosoftYaHeiBold"]]],
+			"text-size": ["interpolate",["linear"],["zoom"],12,10, 16,14],
+			"text-max-width": 8,
+			"text-field": ["to-string", ["get", "BZMC"]],
+			"text-letter-spacing": ["interpolate",["linear"],["zoom"], 12,0.1, 13,0.2, 14,0.2, 16,0.3],
+			"symbol-spacing": ["interpolate",["linear"],["zoom"],11,250, 12,350, 13,550, 14,750, 16,900],
+			"text-optional": true
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "GDJT_GDJTZD_PT_Circle",
+		  "type": "circle",
+		  "source": "SZ_BaseMap_12",
+		  "source-layer": "GDJT_GDJTZD_PT",
+		  "filter": ["match", ["get", "SSXLMC"], ["1号线","2号线","3号线","4号线","4号线支线","换乘站"], true,false ],
+		  "minzoom": 12,
+		  "maxzoom":16,
+		  "layout": {},
+		  "paint": {
+			  "circle-color": "#838383",
+			  "circle-radius": ["interpolate",["linear"],["zoom"],12,2.5, 16,4],
+			  "circle-stroke-width": 1,
+			  "circle-stroke-color": "#333333"
+		  }
+		},
+		{
+		  "id": "GDJT_GDJTZD_PT",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_12",
+		  "source-layer": "GDJT_GDJTZD_PT",
+		  "filter": ["match", ["get", "SSXLMC"], ["1号线","2号线","3号线","4号线","4号线支线","换乘站"], true,false ],
+		  "minzoom": 13,
+		  "maxzoom":16,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],12,10, 14,12, 16,14],
+			  "text-max-angle": 38,
+			  "text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.5],
+			  "text-anchor": "top",
+			  "text-field": ["to-string", ["get", "BZMC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "GDJT_GDJTZD_PT_Large",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_12",
+		  "source-layer": "GDJT_GDJTZD_PT",
+		  "filter": ["match", ["get", "SSXLMC"], ["1号线","2号线","3号线","4号线","4号线支线","换乘站"], true,false ],
+		  "minzoom": 16,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],12,10, 14,12, 16,14],
+			  "text-max-angle": 38,
+			  "text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],16,["literal",["MicrosoftYaHeiBold"]]],
+			  "text-padding": 2,
+			  "text-anchor": "center",
+			  "text-field": ["to-string", ["get", "BZMC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			"text-color": "#B0B0B0",
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "GDJT_GDJTCRK_PT_Circle",
+		  "type": "circle",
+		  "source": "SZ_BaseMap_15",
+		  "source-layer": "GDJT_GDJTCRK_PT",
+		  "minzoom": 15,
+		  "layout": {},
+		  "paint": {
+			  "circle-color": "#4C4C4C",
+			  "circle-radius": [
+				"interpolate",
+				["linear"],
+				["zoom"],
+				15,
+				8,
+				20,
+				10
+			],
+			  "circle-stroke-width": 1,
+			  "circle-stroke-color": "#B2B2B2"
+		  }
+		},
+		{
+		  "id": "GDJT_GDJTCRK_PT",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_15",
+		  "source-layer": "GDJT_GDJTCRK_PT",
+		  "minzoom": 15,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": [
+				  "interpolate",
+				  ["linear"],
+				  ["zoom"],
+				  14,
+				  10,
+				  20,
+				  12
+			  ],
+			  "text-max-angle": 38,
+			  "text-font": ["ArialBold"],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.1],
+			  "text-anchor": "center",
+			  "text-field": ["to-string", ["get", "JC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			"text-color": ["interpolate",["linear"],["zoom"],8,"#9C9C9C",14,"#CCCCCC"]
+		  }
+  		},
+		{
+		  "id": "GDJT_TLZD_PT",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_POI",
+		  "source-layer": "GDJT_TLZD_PT",
+		  "minzoom": 12,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],13,11,16,12],
+			  "icon-image": "HCZ",
+			  "text-max-angle": 38,
+			  "text-font": ["MicrosoftYaHeiRegular"],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.6],
+			  "text-anchor": "top",
+			  "text-field": ["to-string", ["get", "JC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			  "text-color": ["interpolate",["linear"],["zoom"],12,"#828282",16,"#9C9C9C"],
+		  	"text-halo-color": "#343434",
+			  "text-halo-width": 1.2
+		  }
+		},
+		{
+			"id": "SIP_XDS_REC_01",
+			"type": "fill-extrusion",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_XDS_REC_01",
+			"minzoom": 17,
+			"layout": {},
+			"paint": {
+				"fill-extrusion-height": 2,
+				"fill-extrusion-color": "#1F1F1F",
+				"fill-extrusion-opacity": 1
+			}  
+		},
+
+		{
+			"id": "SIP_XDS_REC_1",
+			"type": "fill-extrusion",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_XDS_REC_1",
+			"minzoom": 17,
+			"layout": {},
+			"paint": {
+				"fill-extrusion-height": 4,
+				"fill-extrusion-color": "#404040",
+				"fill-extrusion-opacity": 1,
+				"fill-extrusion-base": 2
+			}  
+		},
+		{
+			"id": "JGZW_JZW_P",
+			"type": "fill-extrusion",
+			"source": "SZ_BaseMap_JZW",
+			"source-layer": "JGZW_JZW_P",
+			"filter": ["all",
+				["match", ["get", "SSXZQ"], ["苏州工业园区"], false,true ],
+				["match", ["get", "IsProtected"], ["否"], true,false]
+			  ],
+			"minzoom": 14,
+			"layout": {},
+			"paint": {
+			  "fill-extrusion-height": [
+			  "interpolate",
+			  ["linear"],
+			  ["zoom"],
+			  15,["case",[">", ["to-number", ["get", "DSCS"]], 0],["*", ["to-number", ["get", "DSCS"]], 3],3],
+			  22,["case",[">", ["to-number", ["get", "DSCS"]], 0],["*",["to-number", ["get", "DSCS"]], 4],4]],
+			  "fill-extrusion-color": "#CCCCCC",
+			  "fill-extrusion-opacity": ["interpolate",["linear"],["zoom"],15,0.25,18,0.4],
+			  "fill-extrusion-vertical-gradient": false
+			}  
+		  },
+		  {
+			"id": "SIP_MPDZ",
+			"type": "symbol",
+			"source": "SIP_JXH",
+			"source-layer": "SIP_MPDZ",
+			"minzoom": 17,
+			"layout": {
+				"text-line-height": 0.8,
+				"text-size": ["interpolate",["linear"],["zoom"],18,10,  20,12],
+				"icon-image": "Lan/2",
+				"icon-text-fit": "both",
+				"icon-text-fit-padding": [5, 5, 5, 5],
+				"text-max-angle": 38,
+				"text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],20,["literal",["MicrosoftYaHeiBold"]]],
+				"text-padding": ["interpolate",["linear"],["zoom"],17,20,18,2],
+				"text-anchor": "center",
+				"text-field": [
+					"concat",
+					["get", "JDMC"],
+					"\n",
+					"——",
+					"\n",
+					["get", "MPHM"],
+					"号"
+				  ]
+			},
+			"paint": {
+				"text-color": "#E6E6E6",
+				"text-halo-color": "#FFFFFF",
+				"text-halo-width": 0
+			}
+		},
+		{
+		  "id": "XZQH_XZ_PT",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_11",
+		  "source-layer": "XZQH_XZ_PT",
+		  "minzoom": 11,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],11,10, 14,12, 20,14],
+			  "text-max-angle": 38,
+			  "icon-image": [ "step",["zoom"],"",11,"XZQH_XZ_PT_S",16,"XZQH_XZ_PT_L"],
+			  "text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],12,["literal",["MicrosoftYaHeiBold"]]],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.5],
+			  "text-anchor": "top",
+			  "text-field": ["to-string", ["get", "BZMC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			"text-color": ["interpolate",["linear"],["zoom"],8,"#9C9C9C",16,"#b0b0b0"],
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "XZQH_GWH_PT_QT",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "XZQH_XZJG_PT_8",
+		  "filter":["match", ["get", "JB"], ["管委会(省级筹)","管委会(省级)"], true,false ],
+		  "minzoom": 10,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],8,10, 10,12, 14,14, 20,16],
+			  "icon-image": [ "step",["zoom"],"",10,"XZQH_GWH_PT_S",12,"XZQH_GWH_PT_L"],
+			  "text-max-angle": 38,
+			  "text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],13,["literal",["MicrosoftYaHeiBold"]]],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.5],
+			  "text-anchor": "top",
+			  "text-field": ["to-string", ["get", "BZMC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			"text-color": ["interpolate",["linear"],["zoom"],8,"#9C9C9C",14,"#b0b0b0"],
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "XZQH_GWH_PT",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "XZQH_XZJG_PT_8",
+		  "filter": ["all",
+			["match", ["get", "JB"], ["管委会(国家级)"], true,false ],
+			["match", ["get", "BZMC"],   ["苏州工业园区"], false,true ]
+		  ],
+		  "minzoom": 9,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],8,10, 10,12, 14,14, 20,16],
+			  "icon-image": [ "step",["zoom"],"",9,"XZQH_GWH_PT_S",12,"XZQH_GWH_PT_L"],
+			  "text-max-angle": 38,
+			  "text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],13,["literal",["MicrosoftYaHeiBold"]]],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.5],
+			  "text-anchor": "top",
+			  "text-field": ["to-string", ["get", "BZMC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			"text-color": ["interpolate",["linear"],["zoom"],8,"#9C9C9C",14,"#b0b0b0"],
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		
+		{
+		  "id": "XZQH_QX_PT",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "XZQH_XZJG_PT_8",
+		  "filter":["match", ["get", "JB"], ["区县级"], true,false ],
+		  "minzoom": 8,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],8,10, 10,12, 14,14, 20,16],
+			  "icon-image": [ "step",["zoom"],"",8,"XZQH_QX_PT_S",9,"XZQH_QX_PT_M",12,"XZQH_QX_PT_L"],
+			  "text-max-angle": 38,
+			  "text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],12,["literal",["MicrosoftYaHeiBold"]]],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.5],
+			  "text-anchor": "top",
+			  "text-field": ["to-string", ["get", "BZMC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			"text-color": ["interpolate",["linear"],["zoom"],8,"#9C9C9C",14,"#b0b0b0"],
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "XZQH_GWH_PT_YQ",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "XZQH_XZJG_PT_8",
+		  "filter":["match", ["get", "BZMC"],["苏州工业园区"], true,false],
+		  "minzoom": 8,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],8,10, 10,12, 14,14, 20,16],
+			  "icon-image": [ "step",["zoom"],"",8,"XZQH_QX_PT_S",9,"XZQH_QX_PT_M",12,"XZQH_QX_PT_L"],
+			  "text-max-angle": 38,
+			  "text-font": ["step",["zoom"],["literal",["MicrosoftYaHeiRegular"]],12,["literal",["MicrosoftYaHeiBold"]]],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.5],
+			  "text-anchor": "top",
+			  "text-field": ["to-string", ["get", "BZMC"]],
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			"text-color": ["interpolate",["linear"],["zoom"],8,"#9C9C9C",14,"#b0b0b0"],
+			"text-halo-color": "#0d0d0d",
+			"text-halo-width": 1
+		  }
+		},
+		{
+		  "id": "XZQH_DS_PT",
+		  "type": "symbol",
+		  "source": "SZ_BaseMap_8",
+		  "source-layer": "XZQH_XZJG_PT_8",
+		  "filter":["match", ["get", "JB"], ["地市级"], true,false ],
+		  "minzoom": 8,
+		  "layout": {
+			  "text-line-height": 1.1,
+			  "text-size": ["interpolate",["linear"],["zoom"],8,12, 10,14, 14,16, 18,18],
+			  "icon-image": [ "step",["zoom"],"",8,"XZQH_DS_PT_S",10,"XZQH_DS_PT_L"],
+			  "text-max-angle": 38,
+			  "text-font": ["MicrosoftYaHeiBold"],
+			  "text-padding": 2,
+			  "text-offset": [0, 0.6],
+			  "text-anchor": "top",
+			  "text-field": "苏州市",
+			  "text-max-width": 8
+		  },
+		  "paint": {
+			  "text-color": ["interpolate",["linear"],["zoom"],8,"#9C9C9C",10,"#b0b0b0"],
+			  "text-halo-color": "#0d0d0d",
+			  "text-halo-width": 1
+		  }
+		}
+	]
+	
+  }
+  
