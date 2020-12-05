@@ -5,7 +5,7 @@
 
 # dependencies
 /node_modules
-/docs
+#  /docs
 
 # IDEs and editors
 /.idea

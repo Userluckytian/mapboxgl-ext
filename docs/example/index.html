@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">
+        (function checkMobile() {
+            var ua = navigator.userAgent;
+            var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+            isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+            isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+            isMobile = isIphone || isAndroid;
+            if(isMobile){window.location = "./mindex.html";}
+        }());
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./libs/loader/loader.css">
+    <link href="./css/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <title>Atlas Javascript SDK 示例</title>
+</head>
+<body>
+    <div class="at-main clearfix at-theme-dark">
+        <div class="at-tree fl">
+            <div class="at-tree-head">
+                <h1>JS SDK 示例<i id="mapVersion"></i></h1>
+            </div>
+            <div class="at-tree-cont" id="atNavs"></div>
+        </div>
+        <div class="at-code fl">
+            <div class="at-btn-areas clearfix">
+                <div class="fl h100" id='codeTitle'><i class="iconfont">&#xe699;</i> 示例源码</div>
+                <div class="fl h100 tr">
+                    <button class="at-btn-default" id="atPlay"><i class="iconfont">&#xe651;</i> 运行</button>
+                    <button class="at-btn-default" id="atRrefresh"><i class="iconfont">&#xe622;</i> 重置</button>
+                </div>
+            </div>
+            <div class="at-code-area">
+                <textarea id="textareaCode" name="textareaCode" style="display: none;"></textarea>
+            </div>
+        </div>
+        <div class="at-map fl"  id="demoFrame">
+            <iframe frameborder="0"></iframe>
+        </div>
+        <div class="at-collapse at-collapse-close tc" title='拖拽调整窗口大小'></div>
+    </div>
+    <script src='./libs/loader/loader.js'></script>
+    <script src="./libs/popoload.min.js"></script>
+    <script id="tpl-at-navs" type="text/x-handlebars-template">
+        <ul class="at-navs">
+            {{#each this}}
+                <li data-path='{{path}}'>
+                    <h3>{{name}} <i>{{children.length}}</i><span><i class="iconfont">&#xe63f;</i></span></h3>
+                    <ul>
+                        {{#each children}}
+                        <li data-path='{{path}}'>{{name}}</li>
+                        {{/each}}
+                    </ul>
+                </li>
+            {{/each}}
+        </ul>
+    </script>
+    <script>
+    PL({config:{path:{root:'./'}},libs:['root:js/example.js?'+new Date().getTime()]});
+    </script>
+</body>
+</html>

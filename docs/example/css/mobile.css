@@ -1,0 +1,120 @@
+@charset "utf-8";
+* {box-sizing: border-box;}
+body {font-family: "-apple-system","PingFang SC","Hiragino Sans GB",Arial,"Microsoft YaHei",Helvetica Neue,sans-serif;font-size:12px;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+a{text-decoration:none;outline: none;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;outline: none;}
+table{border-collapse:collapse;border-spacing:0;}
+.clear{clear: both;float: none;height: 0;overflow: hidden;}
+html .hide{display:none;}
+::-webkit-scrollbar {width: 6px;height: 6px;}
+::-webkit-scrollbar-track {background: #aaa;}
+::-webkit-scrollbar-thumb {background: #333;border-radius: 3px;}
+.visible {overflow: visible;}
+.hidden{ overflow:hidden; }
+.fl{float:left}
+.fr{float:right}
+.db{display:block}
+.tr{text-align: right;}
+.tl{text-align: right;}
+.tc{text-align: center;}
+.clear{clear: both;}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+* html .clearfix{height:1%}
+.w100{width:100%;}
+.page100 {width: 100%;}
+.w1024{width: 1024px;}
+.h100{height: 100%;}
+.h60 {height: 60px;}
+.auto{margin: 0 auto;}
+.mb20{margin-bottom:20px;}
+h1{font-size:1.4rem;}
+h2{font-size:1.3rem;}
+h3{font-size:1.2rem;}
+h4{font-size:1.1rem;}
+h5{font-size:1rem;}
+h5{font-size:0.8rem;}
+.flex-vertical{display:flex;align-items:center;}
+.flex-v-coloum{display:flex;align-items:center;flex-direction: column;justify-content:center;}
+.boxshadow {box-shadow: 0 0 3px 1px rgba(0,0,0,.1);}
+a,button,input,textarea {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.red{color:#E00;}
+.blue{color:#00E;}
+.green{color:#0E0;}
+.orange{color:#e90};
+.yellow{color: #ee0;}
+.lightgray{color:#aaa;}
+.gray{color:#888;}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 985151 */
+    src: url('http://at.alicdn.com/t/font_985151_hef1sqef25g.eot');
+    src: url('http://at.alicdn.com/t/font_985151_hef1sqef25g.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_985151_hef1sqef25g.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_985151_hef1sqef25g.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_985151_hef1sqef25g.svg#iconfont') format('svg');
+  }
+
+.iconfont {font-family:'iconfont';font-style:normal;}
+
+html, body{height:100%;overflow: hidden;}
+
+#menu{width:100%;height:50px;line-height:50px;position: absolute;position: absolute;top:0;left:0;background-color:#448AFF;color:#fff;}
+#menu h1 {font-weight:normal;font-size: 18px;padding:0 15px 0 50px;background:url('./images/logo.png') 10px center no-repeat;background-size: auto 30px;}
+#menu button{width:30px;height:30px;background:url('./images/menu.svg') center center no-repeat;background-size: auto 90%;position: absolute;right: 10px;top:10px;outline: none;background-color:transparent;border:none;}
+#describe{height:30px;line-height:30px;position: absolute;top:50px;left:0;width:100%;z-index: 9999;background-color:rgba(198,216,250,1);color:#333;padding:0 20px;font-size:14px;}
+
+.at-tree-cont {width: 100%;height:calc(100% - 80px);position: absolute;top: 80px;left:0;z-index: 9999;background-color:#f5f5f5;display: none;}
+.at-map {width: 100%;height:calc(100% - 80px);overflow: hidden;margin-top:80px;}
+.at-map iframe {height:100%;width:100%;outline: none;border:none;overflow: hidden;}
+
+.at-btn-areas {height: 60px;white-space: nowrap;overflow: hidden;}
+.at-btn-areas > div {width:50%;line-height: 60px;padding:0 5px;}
+.at-btn-areas > div:nth-child(1) {text-overflow: ellipsis;background-size: auto 16px;}
+.at-code-area {height: calc(100% - 60px);border-top:1px solid rgba(0,0,0,.1);background-color:#111;padding-right: 10px;}
+.at-code-area textarea {width:100%;height:100%;}
+.at-code-area .CodeMirror{height:100%;font-size: 14px;background:url('./images/logo_alpha.png') center center no-repeat;background-size: 200px auto;line-height:150%;}
+
+.at-btn-areas .at-btn-default {height:100%;padding: 0 15px 0 15px;border:none;outline: none;cursor:pointer;background-color:transparent;color:#fff;}
+
+.at-collapse{position: absolute;width:10px;height: calc(100% - 61px);background:#333 url('./images/move.svg') center center no-repeat;background-size: 100% auto;right: calc((100% - 200px) * 0.6);top: 61px;z-index:999;overflow: hidden;text-align: center;cursor: e-resize;}
+
+.at-tree > div:nth-child(1) {height: 60px;}
+.at-tree > div:nth-child(2) {height: calc(100% - 60px);border-top:1px solid rgba(0,0,0,.1);position: relative;}
+
+.at-tree h1 {height:100%;line-height:45px;font-size: 16px;font-weight:600;padding:0px 10px 0px 65px;background:url('./images/logo.png') 15px 10px no-repeat;background-size: auto 36px;position: relative;}
+.at-tree h1 i {font-style: normal; position: absolute; left: 65px; bottom: 12px;font-size: 12px;z-index: 9;display: inline;line-height: 100%;}
+
+.at-navs {width:100%;}
+.at-navs > li {border-bottom: 1px solid rgba(0,0,0,.09);}
+.at-navs h3 {height:45px;line-height: 45px;padding: 0 0px 0 20px;}
+.at-navs li ul li {height: 35px;line-height:35px;padding:0 10px;}
+.at-navs h3 {position: relative;font-size: 16px;font-weight: normal;}
+.at-navs h3 > i {font-size: 12px;font-style: normal;}
+.at-navs h3 span {display: inline-block;position: absolute;right:15px;top:0px;font-size: 14px;}
+.at-navs li ul li {padding-left: 30px;}
+
+.at-theme-blue {background-color:#f5f5f5;color:#333;}
+.at-theme-blue .at-btn-areas,
+.at-theme-blue .at-tree > div:nth-child(1) {background-color:#00E;color:#fff;}
+.at-theme-blue .at-tree {background-color:#FAFBFF;}
+.at-theme-blue .at-navs li ul li:hover,
+.at-theme-blue .at-navs h3:hover {background-color:#E4EDF7;cursor: pointer;}
+.at-theme-blue .at-navs li ul li.active {background-color:rgba(0,0,0,.3);color:#fff;}
+
+.at-theme-dark {background-color:#333;color:#ddd;}
+.at-theme-dark .at-btn-areas,
+.at-theme-dark .at-tree > div:nth-child(1) {background-color:#222;color:#ddd;}
+.at-theme-dark .at-tree {background-color:#333;}
+.at-theme-dark .at-navs h3 > i {color:#A6E22E;}
+.at-theme-dark .at-navs li ul li:hover,
+.at-theme-dark .at-navs h3:hover {background-color:#333;cursor: pointer;color:#fff;}
+.at-theme-dark .at-navs li ul li.active {background-color:rgba(0,0,0,.3);color:#fff;}
+.at-theme-dark .at-tree h1 i{color:#A6E22E;}

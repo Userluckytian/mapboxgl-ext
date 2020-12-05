@@ -1,8 +1,4 @@
-// cityfun.setConfig({
-// 	apiUrl: 'http://api.atlasdata.cn',
-// 	accessToken: 'eyJpZCI6InNodW4ifQ.69ncA--qjdXrEXxMF3WDBlCKfLv_OigFLS27a2ATE_A',
-// });
-
+ 
 cityfun.setToken('pk.eyJ1IjoibGltemdpc2VyIiwiYSI6ImNqZXFvemJlcjB1bWYyd2x0eGxjeGdvcXIifQ.gSsj63R-2VZV7L7mpSw0Uw');
 
 var map = new cityfun.Map({
