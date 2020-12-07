@@ -1,24 +1,21 @@
 import '../node_modules/mapbox-gl/dist/mapbox-gl.css';
+// import mapboxgl from '@cgcs2000/mapbox-gl';
 import mapboxgl from 'mapbox-gl';
- import {setConfig} from './config';
+import { setConfig } from './config';
 import { version } from '../package.json';
- 
 import { Map } from './map/Map';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash.clonedeep'
 
 const exported = cloneDeep(mapboxgl);
 exported.setToken = (token) => {
     mapboxgl.accessToken = token;
     setConfig({
-        accessToken:token
+        accessToken: token
     })
 };
 exported.version = version;
 
 exported.Map = Map;
-
-exported.FMap  
- 
 
 export default exported;
 

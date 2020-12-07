@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>初始化地图</title>
+    <link rel="stylesheet" href="../../../../dist/cityfun/cityfun.min.css">
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            margin: 0;
+        }
+        
+        #mapinfo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #eee;
+            padding: 20px;
+            box-shadow: 0 0 4px #ddd;
+        }
+        
+        #mapinfo div {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="mapinfo"></div>
+    <script src="../../../../dist/cityfun/cityfun.min.js"></script>
+    <script>
+        cityfun.setToken('pk.eyJ1IjoibGltemdpc2VyIiwiYSI6ImNqZXFvemJlcjB1bWYyd2x0eGxjeGdvcXIifQ.gSsj63R-2VZV7L7mpSw0Uw');
+        var map = new cityfun.Map({
+            container: 'map',
+            center: [120.74075692443142, 31.162229349894375],
+            zoom: 12,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json',
+        });
+        map.on('load', (e) => {
+            showMapInfo();
+        });
+        map.on('moveend', function(e) {
+            showMapInfo();
+        });
+
+        function showMapInfo() {
+            let htmlstr = `
+						<div>
+							当前地图中心：${map.getCenter()}
+						</div>
+						<div>
+							当前地图级别：${map.getZoom()}
+						</div>
+						<div>
+							当前旋转角：${map.getBearing()}
+						</div>
+						<div>
+							当前地图倾角： ${map.getPitch()}
+						</div>	
+						<div>
+							当前地图范围：${map.getBounds().toArray()}
+						</div>
+        	 `;
+            document.getElementById('mapinfo').innerHTML = htmlstr;
+        }
+    </script>
+</body>
+
+</html>

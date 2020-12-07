@@ -29,6 +29,12 @@
             zoom: 8,
             style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json',
         });
+        let url = 'http://map.cityfun.com.cn/arcgis/rest/services/SZ/SZ_IMAGE_2020_3857/MapServer';
+        map.on('load', (e) => {
+            map.addArcGISTileLayer(url, {
+                layerid: 'image01'
+            });
+        })
     </script>
 </body>
 
