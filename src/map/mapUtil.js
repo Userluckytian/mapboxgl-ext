@@ -41,7 +41,6 @@ export function ajax(opt) {
     if (opt.async) {
         xmlHttp.onreadystatechange = function() {
             if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-                // 有传入success回调就执行
                 opt.success(JSON.parse(xmlHttp.responseText));
             }
         };
@@ -50,4 +49,10 @@ export function ajax(opt) {
             opt.success(JSON.parse(xmlHttp.responseText));
         }
     }
+}
+export function createCavans(width, height) {
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    return canvas;
 }

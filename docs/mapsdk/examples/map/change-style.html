@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>初始化地图</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            margin: 0;
+        }
+        
+        #menu {
+            position: absolute;
+            background: #fff;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        #menu label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="menu">
+        <input id="dark" type="radio" name="rtoggle" value="dark" checked="checked" />
+        <label for="dark">深色版</label>
+        <input id="light" type="radio" name="rtoggle" value="light" />
+        <label for="light">浅色版</label>
+    </div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+        cityfun.setToken('pk.eyJ1IjoibGltemdpc2VyIiwiYSI6ImNqZXFvemJlcjB1bWYyd2x0eGxjeGdvcXIifQ.gSsj63R-2VZV7L7mpSw0Uw');
+
+        let urls = {
+            dark: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json',
+            light: 'http://webres.cityfun.com.cn/szmap/szmap/3857/map.json',
+        };
+        var specialStyle = 'http://webres.cityfun.com.cn/sip_std_zt/3857/jzgdfb.json';
+        var map = new cityfun.Map({
+            container: 'map',
+            center: [120.70044254024515, 31.301339366724918],
+            zoom: 12,
+            pitch: 60,
+            style: urls.dark,
+        });
+
+        map.on('load', (e) => {
+            fetch(specialStyle)
+                .then((result) => {
+                    return result.json();
+                })
+                .then((specialStyle) => {
+                    map.addMapStyle(specialStyle, {
+                        styleid: 'special-map',
+                    });
+                });
+            var layerList = document.getElementById('menu');
+            var inputs = layerList.getElementsByTagName('input');
+
+            function switchLayer(layer) {
+                var layerId = layer.target.id;
+                urls[layerId] && map.setStyle(urls[layerId]);
+            }
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].onclick = switchLayer;
+            }
+        });
+    </script>
+</body>
+
+</html>

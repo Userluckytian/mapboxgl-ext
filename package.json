@@ -1,8 +1,8 @@
 {
-    "name": "cityfun",
+    "name": "cityfun-gl",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "src/main.js",
     "scripts": {
         "build": "webpack --config config/webpack.pro.js",
         "start": "webpack-dev-server --config config/webpack.dev.js --host 127.0.0.1"

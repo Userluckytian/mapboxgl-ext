@@ -3,8 +3,12 @@ var atEaxmpleTree = [{
         path: 'map',
         children: [
             { name: '初始化地图', path: 'basemap' },
-            { name: '显示地图参数', path: 'mapinfo' },
+            { name: '显示地图参数', path: 'get-mapinfo' },
 
+            { name: '切换底图', path: 'change-basemap' },
+            { name: '切换地图', path: 'change-style' },
+            { name: '添加标准地图样式服务', path: 'add-map-style' },
+            { name: '移除标准地图样式服务', path: 'remove-map-style' },
         ]
     },
     {
@@ -25,5 +29,11 @@ var atEaxmpleTree = [{
             // { name: 'ArcGIS瓦片服务', path: 'arcgistile' },
         ]
     },
-
+    {
+        name: '其他',
+        path: 'else',
+        children: [
+            { name: '地图截图', path: 'snap' },
+        ]
+    },
 ];

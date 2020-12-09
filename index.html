@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cf map</title>
+    <title>Cityfun Map SDK 测试</title>
     <style>
         html,
         body {
@@ -19,12 +19,13 @@
             width: 100%;
         }
         
-        #mapinfo {
+        #menu {
             position: absolute;
+            background: #fff;
             top: 20px;
-            right: 20px;
-            background-color: #fff;
-            border: 1px solid #eee;
+            left: 20px;
+            padding: 10px;
+            font-family: 'Open Sans', sans-serif;
         }
     </style>
 </head>
@@ -34,7 +35,12 @@
 
     </div>
 
-    <div id="mapinfo"></div>
+    <div id="menu">
+
+        <button id="snap">截图</button>
+        <button id="thumbnail">生成缩略图</button>
+
+    </div>
 
 </body>
 

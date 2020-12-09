@@ -5,6 +5,6 @@ module.exports = merge(base, {
     devServer: {
         port: 4000,
         host: '127.0.0.1',
-        // open: true
+        open: true
     },
 });

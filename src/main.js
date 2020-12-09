@@ -1,6 +1,7 @@
 import '../node_modules/mapbox-gl/dist/mapbox-gl.css';
 // import mapboxgl from '@cgcs2000/mapbox-gl';
 import mapboxgl from 'mapbox-gl';
+import 'whatwg-fetch';
 import { setConfig } from './config';
 import { version } from '../package.json';
 import { Map } from './map/Map';
