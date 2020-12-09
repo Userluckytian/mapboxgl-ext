@@ -12,7 +12,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, '../dist'),
-        filename: 'cityfun/[name].js',
+        filename: '[name].js',
         library: 'cityfun',
         libraryExport: 'default',
         libraryTarget: 'umd',
@@ -86,7 +86,7 @@ module.exports = {
         new HtmlWebpackPlugin({ template: './index.html' }),
 
         new MiniCssExtractPlugin({
-            filename: 'cityfun/cityfun.min.css',
+            filename: 'cityfun.min.css',
         }),
 
         // new CleanWebpackPlugin(),

@@ -221,6 +221,24 @@ export class Map extends mapboxgl.Map {
             this._removeBaseStyle();
             this.addMapStyle(data, opt);
         }
+        /**
+         * 图层 id 数组
+         * @param layerids
+         */
+    removeLayers(layerids, rimg = true) {
+            for (let id of layerids) {
+                // console.log(999, layerids);
+                if (this.getLayer(id)) {
+                    this.removeLayer(id);
+                }
+                if (this.getSource(id)) {
+                    this.removeSource(id);
+                }
+                if (this.hasImage(id) && rimg) {
+                    this.removeImage(id);
+                }
+            }
+        }
         // 获取缩略图
     getThumbnail(options) {
             options = merge({
