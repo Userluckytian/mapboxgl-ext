@@ -239,6 +239,43 @@ export class Map extends mapboxgl.Map {
                 }
             }
         }
+        /**
+         * 添加默认图层组
+         */
+    addGroupLayer() {
+            this.addLayer({
+                id: 'cityfun.null.fill',
+                type: 'fill',
+                source: {
+                    type: 'geojson',
+                    data: null,
+                },
+            });
+            this.addLayer({
+                id: 'cityfun.null.line',
+                type: 'line',
+                source: {
+                    type: 'geojson',
+                    data: null,
+                },
+            });
+            this.addLayer({
+                id: 'cityfun.null.symbol',
+                type: 'symbol',
+                source: {
+                    type: 'geojson',
+                    data: null,
+                },
+            });
+            // this.addLayer({
+            //     id: 'sp-layer-hot',
+            //     type: 'heatmap',
+            //     source: {
+            //         type: 'geojson',
+            //         data: null,
+            //     },
+            // });
+        }
         // 获取缩略图
     getThumbnail(options) {
             options = merge({
