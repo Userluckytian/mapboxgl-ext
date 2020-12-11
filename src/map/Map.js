@@ -4,22 +4,28 @@ import { saveFile } from '../utils/file';
 // import { merge } from '../utils/utils';
 // import LogoControl from '../controls/LogoControl';
 import { ajax, createCavans } from './mapUtil';
-import { merge } from '../utils/utils';
+import { isObject, merge } from '../utils/utils';
 export class Map extends mapboxgl.Map {
     constructor(options) {
             let { style } = options;
             let obj = null;
             // 传入url是接口，访问接口，认证地图访问（只能同步请求）
-            ajax({
-                method: 'get',
-                url: style,
-                async: false,
-                success: function(response) {
-                    obj = response;
-                },
-            });
-            options.style = obj;
-            super(options);
+            isObject(style);
+            if (isObject(style)) {
+                options.style = style;
+                super(options);
+            } else {
+                ajax({
+                    method: 'get',
+                    url: style,
+                    async: false,
+                    success: function(response) {
+                        obj = response;
+                    },
+                });
+                options.style = obj;
+                super(options);
+            }
         }
         /**
          *加载arcgis 切片服务
@@ -279,13 +285,15 @@ export class Map extends mapboxgl.Map {
         // 获取缩略图
     getThumbnail(options) {
             options = merge({
-                type: 'image/jpeg',
-                quality: 1,
-                width: 300,
-                height: 300,
-                saveAsFile: false,
-                fileName: `MapThumbnail_${new Date().getTime()}`
-            }, options || {});
+                    type: 'image/jpeg',
+                    quality: 1,
+                    width: 300,
+                    height: 300,
+                    saveAsFile: false,
+                    fileName: `MapThumbnail_${new Date().getTime()}`,
+                },
+                options || {}
+            );
             const { type, quality, width, height, saveAsFile, fileName } = options;
             const that = this;
             return new Promise((resolve, reject) => {
@@ -296,7 +304,17 @@ export class Map extends mapboxgl.Map {
                     const render = that.getCanvas();
                     const ctx = canvas.getContext('2d');
                     ctx.beginPath();
-                    ctx.drawImage(render, ((render.width - width) / 2), ((render.height - height) / 2), width, height, 0, 0, width, height);
+                    ctx.drawImage(
+                        render,
+                        (render.width - width) / 2,
+                        (render.height - height) / 2,
+                        width,
+                        height,
+                        0,
+                        0,
+                        width,
+                        height
+                    );
                     ctx.save();
                     const fileData = canvas.toDataURL(type, quality);
 
@@ -312,11 +330,13 @@ export class Map extends mapboxgl.Map {
         // 获取地图截图
     getScreenshot(options) {
         options = merge({
-            type: 'image/jpeg',
-            quality: 1,
-            saveAsFile: false,
-            fileName: `MapScreenShot_${new Date().getTime()}`
-        }, options || {});
+                type: 'image/jpeg',
+                quality: 1,
+                saveAsFile: false,
+                fileName: `MapScreenShot_${new Date().getTime()}`,
+            },
+            options || {}
+        );
         const { type, quality, saveAsFile, fileName } = options;
         const that = this;
         return new Promise((resolve, reject) => {
