@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+        maximum-scale=1.0,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>初始化地图</title>
+        <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+        <style>
+            html,
+            body,
+            #map {
+                height: 100%;
+                margin: 0;
+            }
+        </style>
+    </head>
+    
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+        var map = new cityfun.Map({
+            container: 'map',
+            center: [120.58018178199796, 31.299183908754387],
+            zoom: 8,
+            pitch: 45, // 俯仰角
+            bearing: 90, // 方位角
+            style: "http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json",
+        });
+    </script>
+</body>
+</html>
