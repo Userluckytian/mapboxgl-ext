@@ -124,6 +124,8 @@ var atEaxmpleTree = [{
         path: 'else',
         children: [
             { name: '地图截图', path: 'snap' },
+            { name: '地图水印', path: 'watermark' },
+            { name: '浏览器检查', path: 'browser' },
         ]
     },
 ];
