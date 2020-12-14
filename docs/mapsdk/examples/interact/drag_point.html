@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点拖拽</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <pre id='coordinates' class='coordinates'></pre>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+        var map = new cityfun.Map({
+            container: 'map',
+            center: [120.58018178199796, 31.299183908754387],
+            zoom: 8,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        //标记鼠标拖拽状态
+        var draggingFlag;
+        //标记鼠标是否在点图层上面
+        var cursorOverPointFlag;
+        var container = map.getCanvasContainer();
+
+        var geojson = {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": map.getCenter().toArray(),
+                }
+            }]
+        };
+
+        function mouseDown() {
+            if (!cursorOverPointFlag) return;
+
+            draggingFlag = true;
+            container.style.cursor = 'grab';
+            map.on('mousemove', mouseMovePoint);
+            map.once('mouseup', mouseUpPoint);
+        }
+
+        function mouseMovePoint(e) {
+            if (!draggingFlag) return;
+
+            container.style.cursor = 'grabbing';
+            geojson.features[0].geometry.coordinates = [e.lngLat.lng, e.lngLat.lat];
+            map.getSource('point').setData(geojson);
+        }
+
+        function mouseUpPoint() {
+            if (!draggingFlag) return;
+
+            container.style.cursor = '';
+            draggingFlag = false;
+            map.off('mousemove', mouseMovePoint);
+        }
+
+        map.on('load', function () {
+
+            map.addSource('point', {
+                "type": "geojson",
+                "data": geojson
+            });
+
+            map.addLayer({
+                "id": "point-layer",
+                "type": "circle",
+                "source": "point",
+                "paint": {
+                    "circle-radius": 20,
+                    "circle-color": "#f00"
+                }
+            });
+
+            map.on('mousemove', function (e) {
+                var features = map.queryRenderedFeatures(e.point, {'layers': ['point-layer']});
+                if (features.length > 0) {
+                    map.setPaintProperty('point-layer', 'circle-color', '#09f');
+                    container.style.cursor = 'move';
+                    cursorOverPointFlag = true;
+                    map.dragPan.disable();
+                } else {
+                    map.setPaintProperty('point-layer', 'circle-color', '#f00');
+                    container.style.cursor = '';
+                    cursorOverPointFlag = false;
+                    map.dragPan.enable();
+                }
+            });
+
+            map.on('mousedown', mouseDown);
+        });
+    </script>
+</body>
+</html>

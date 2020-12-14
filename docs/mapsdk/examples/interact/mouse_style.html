@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>初始化地图</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+        body {position:relative;}
+        .btn-group {position: absolute;z-index: 999;left: 5px;top:5px;}
+        .btn-group button{padding: 5px 15px;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="btn-group">
+            <button onclick="changeMouseStyle();">默认模式</button>
+            <button onclick="changeMouseStyle('default');">普通模式</button>
+            <button onclick="changeMouseStyle('crosshair');">编辑模式</button>
+            <button onclick="changeMouseStyle('move');">移动模式</button>
+            <button onclick="changeMouseStyle('pointer');">点击模式</button>
+            <button onclick="changeMouseStyle('icon');">图标模式</button>
+    </div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+        var map = new cityfun.Map({
+            container: 'map',
+            center: [120.58018178199796, 31.299183908754387],
+            zoom: 8,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        function changeMouseStyle(type) {
+            if(type !== 'icon') {
+                map.getCanvas().style.cursor = type || '';
+            } else {
+                map.getCanvas().style.cursor = 'url("./images/cursor_measure.cur"),default';
+            }
+        }
+    </script>
+</body>
+</html>

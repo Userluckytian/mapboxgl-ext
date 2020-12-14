@@ -351,4 +351,16 @@ export class Map extends mapboxgl.Map {
             that.setBearing(that.getBearing());
         });
     }
+    setCursor(type) {
+        const canvas = this.getCanvasContainer();
+        canvas.style.cursor = type || '';
+    }
+    bringToFront(layerId, options) {
+        if(!layerId) return;
+        let layer = this.getLayer(layerId);
+        if(!layer) return;
+        layer = layer.serialize();
+        this.removeLayer(layer);
+        this.addLayer(layer);
+    }
 }

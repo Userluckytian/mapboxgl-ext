@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三维建筑</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [120.5829623237538, 31.307253437105572],
+            zoom: 16,
+            pitch: 60,
+            bearing: 36.8,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        map.on('load', function() {
+            var layers = map.getStyle().layers;
+            var labelLayerId;
+            for (var i = 0; i < layers.length; i++) {
+                if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+                    labelLayerId = layers[i].id;
+                }
+            }
+
+            map.addLayer({
+                'id': '3d-buildings',
+                'source': 'basic',
+                'source-layer': 'building',
+                'type': 'fill-extrusion',
+                'minzoom': 15,
+                'paint': {
+                    'fill-extrusion-color': '#f00',
+                    'fill-extrusion-height': 30,
+                    'fill-extrusion-opacity': .6,
+                }
+            }, labelLayerId);
+        });
+    </script>
+</body>
+</html>

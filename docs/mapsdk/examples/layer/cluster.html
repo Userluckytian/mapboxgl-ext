@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点聚合</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script src="./libs/jquery.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [121.89538999999999, 29.473429999999997],
+            zoom: 14,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        map.on('load', function() {
+            $.get('./data/geojson/poi_xiangshan.json', function(data) {
+
+                data.features.forEach(function(point) {
+                    point.properties = {
+                        val: Math.random() * 100
+                    };
+                });
+
+                map.addSource('data-points',{
+                    type: 'geojson',
+                    data: data,
+                    cluster: true,
+                    clusterMaxZoom: 15,
+                    clusterRadius: 50,
+                    // enableQueryChildren:false 
+                });
+
+                // 添加非聚合图层
+                map.addLayer({
+                    "id": "unclustered-points",
+                    "type": "symbol",
+                    "source": "data-points",
+                    "filter": ["!has", "point_count"],
+                    "layout": {
+                        "icon-image": "gongsi-16"
+                    }
+                });
+
+                // 添加聚合图层
+                var layers = [[100, '#f90'], [50, '#096'], [0, '#009']];
+                layers.forEach(function(layer, index) {
+                    map.addLayer({
+                        'id': 'points' + index,
+                        'type': 'circle',
+                        'source': 'data-points',
+                        'paint': {
+                            'circle-radius': 18,
+                            'circle-color': layer[1]
+                        },
+                        "filter": index === 0 ?
+                        [">=", "point_count", layer[0]] :
+                        ["all", [">=", "point_count", layer[0]], ["<", "point_count", layers[index - 1][0]]]
+                    });
+                });
+
+                // 添加聚合数字图层
+                map.addLayer({
+                    "id": "cluster-count",
+                    "type": "symbol",
+                    "source": "data-points",
+                    "layout": {
+                        "text-field": "{point_count}",
+                        "text-size": 16
+                    },
+                    "paint":{
+                        "text-color":"white"
+                    },
+                    "filter": ["has", "point_count"]
+                });
+
+            });
+            
+        });
+    </script>
+</body>
+</html>

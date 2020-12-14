@@ -1,7 +1,7 @@
 /**
  * LogoControl
  */
-export default class LogoControl {
+  class LogoControl {
     constructor(options) {
         this.options = options || {};
     }
@@ -21,7 +21,7 @@ export default class LogoControl {
             anchor.style.background = `url(${options.logo}) left center no-repeat`;
             anchor.style.backgroundSize = 'auto 100%';
         }
-        anchor.href = options.link || "http://www.atlasdata.cn";
+        anchor.href = options.link // || "http://www.atlasdata.cn";
         anchor.setAttribute("aria-label", "Atlas logo");
         anchor.setAttribute("rel", "noopener");
         this._container.appendChild(anchor);
@@ -32,4 +32,7 @@ export default class LogoControl {
         this._container.parentNode.removeChild(this._container);
         this._map = undefined;
     }
+}
+export {
+    LogoControl
 }

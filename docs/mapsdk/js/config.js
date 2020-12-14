@@ -3,4 +3,4 @@ var ATLAS_CONFIG = {
     token: 'eyJpZCI6InNodW4ifQ.69ncA--qjdXrEXxMF3WDBlCKfLv_OigFLS27a2ATE_A',
 };
 
-var SDK_VERSION = '3.0.1';
+  var SDK_VERSION = '';

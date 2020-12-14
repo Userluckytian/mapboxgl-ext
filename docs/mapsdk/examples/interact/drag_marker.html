@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图标拖拽</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+        .marker{width:40px;height:40px;z-index:999;background:url('./images/marker-icon.png') center center no-repeat;cursor:move;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+        var map = new cityfun.Map({
+            container: 'map',
+            center: [120.58018178199796, 31.299183908754387],
+            zoom: 8,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        var el = document.createElement('div');
+        el.className = 'marker';
+
+        var MarkerObj = new cityfun.Marker(el, {
+            offset: [-33 / 2, -33 / 2],
+            draggable: true,
+        })
+        .setLngLat(map.getCenter())
+        .addTo(map);
+    </script>
+</body>
+</html>

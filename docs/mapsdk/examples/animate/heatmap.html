@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>热力图</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+        var LOCATION_COUNT = 200;
+
+        var mapOptions = ({
+            container: 'map',
+            center: [106.26551530392737, 31.478794879738444],
+            zoom: 8,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        var heatmapColors = [0, 'rgba(21, 56, 250, 0)',
+                            0.1, 'rgba(113, 247, 173, 0.8)',
+                            0.3, 'rgba(113, 245, 57, 0.8)',
+                            0.5, 'rgba(160, 246, 51, 0.8)',
+                            0.6, 'rgba(246, 250, 60, 0.8)',
+                            0.7, 'rgba(241, 156, 44, 0.8)',
+                            0.8, 'rgba(238, 118, 39, 0.8)',
+                            1, 'rgba(255, 0, 0, 0.8)',
+                            ];
+
+        var generateRandomAudienceData = function() {
+        if (this.weekCurve == null) {
+            var twelveHoursWeekday = Array.from(Array(12).keys()).map(function(x) { return x === 0 ? 2 : x * 5});
+            var weekdayCurve = [...twelveHoursWeekday].concat([...twelveHoursWeekday].reverse());
+            var weekdaysCurve = [];
+            Array.from(Array(5).keys()).forEach(() => {
+            weekdaysCurve = [...weekdaysCurve, ...weekdayCurve];
+            });
+
+            var twelveHoursWeekend = Array.from(Array(12).keys()).map(x => x === 0 ? 2 : x * 2);
+            var weekendDayCurve = [...twelveHoursWeekend].concat([...twelveHoursWeekend].reverse());
+            var weekendDaysCurve = [];
+            Array.from(Array(2).keys()).forEach(() => {
+            weekendDaysCurve = [...weekendDaysCurve, ...weekendDayCurve];
+            });
+
+            this.weekCurve = [...weekdaysCurve, ...weekendDaysCurve];
+        }
+            randomAudience = this.weekCurve.map(x => x * (1.0 + ((20 - (Math.random() * 40)) / 100)) / 50);
+        for (var j = 0; j < Math.floor(Math.random() * randomAudience.length); j += 1) {
+            randomAudience.push(randomAudience.shift());
+        }
+        return randomAudience;
+        };
+
+        //
+        // Gnerate random geojson data.
+        //
+        var data = [];
+        for(var i = 0; i < LOCATION_COUNT; i++) {
+            var concentrations = generateRandomAudienceData();
+            var lat = (mapOptions.center[1] - 0.5) + Math.random();
+            var lng = (mapOptions.center[0] - 0.5) + Math.random();
+                data.push({
+                    type: 'Feature',
+                    geometry: {
+                    type: 'Point',
+                    coordinates: [lng, lat],
+                },
+                properties: {
+                    id: i,
+                    concentrations: concentrations,
+                    lat: lat,
+                    lng: lng,
+                },
+                });
+        }
+
+      
+       var map = new cityfun.Map(mapOptions);
+        map.on('load', function() {
+            setupLayers();
+        startAnimation();
+        });
+
+        var mapLayerHeatmap = null;
+        var mapDatasource = null;
+        var datasourceID = 'heatDataSource';
+
+        //
+        // Setup map datasource and layer.
+        //
+        var setupLayers = () => {
+            var datasource = {
+            id: 'datasourceID',
+        };
+        
+        var source = {
+            id: datasourceID,
+            data: {
+                type: 'geojson',
+                data: {
+                    type: 'FeatureCollection',
+                    features: data,
+                },
+            },
+        };
+        map.addSource(source.id, source.data);
+        
+        mapLayerHeatmap = {
+            id: 'heatmap',
+            type: 'heatmap',
+            source: datasourceID,
+            paint: {
+            // Increase the heatmap weight based on frequency and property magnitude
+            'heatmap-weight': {
+                property: 'concentration',
+                type: 'exponential',
+                stops: [
+                [0, 0],
+                [0.9, 1],
+                ],
+            },
+            // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
+            // Begin color ramp at 0-stop with a 0-transparancy color
+            // to create a blur-like effect.
+            'heatmap-color': [
+                'interpolate',
+                ['exponential', 0.1],
+                ['heatmap-density'],
+                ...heatmapColors,
+            ],
+            // Increase the heatmap color weight weight by zoom level
+            // heatmap-ntensity is a multiplier on top of heatmap-weight
+
+            // Adjust the heatmap radius by zoom level
+            'heatmap-radius': {
+                stops: [
+                [0, 2],
+                [24, 200],
+                ],
+            },
+            // Transition from heatmap to circle layer by zoom level
+            'heatmap-opacity': {
+                default: 1,
+                stops: [
+                [17, 1],
+                [19, 0],
+                ],
+            },
+            },
+            layout: {
+            visibility: 'visible', // this.modeIndex === 1 ? 'visible' : 'none',
+            },
+        };
+        map.addLayer(mapLayerHeatmap);
+        };
+
+        //
+        // Run the heat animation.
+        //
+        var startAnimation = () => {
+        var dataIndex = 0;
+        var dataLength = generateRandomAudienceData().length;
+
+        setInterval(() => {
+            mapDatasource = map.getSource(datasourceID);
+            data.forEach((d,i) => {
+                d.properties.concentration = d.properties.concentrations[dataIndex];
+            });
+
+            // console.log(data.map(x=>x.properties.concentration).join(','));
+
+            mapDatasource.setData({
+                type: 'FeatureCollection',
+                features: data,
+            });
+            dataIndex = (dataIndex + 1) % dataLength;
+        //  console.log(dataIndex);
+        }, 1000 / 30); // 30 FPS
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加Threejs图层</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script src="./libs/three.min.js"></script> 
+    <script>
+        const THREE = window.THREE;
+
+        /**
+         * gl图层基于Three.js的实现，声名并实现ThreeJSDemo类，包括constructor方法、onAdd方法以及render方法。
+         * @constructor: function  需声名（id:唯一标识、type:图层类型、renderingMode:渲染模式为三维渲染)
+         * @onAdd: function(参数map:地图实例，参数gl:WebGL句柄)  {函数体：1.定义着色器 2.配置program、坐标、矩阵等（函数体内容可自定义）}
+         * @render: function(参数gl:WebGL句柄，参数matrix:矩阵)  {函数体：进行图层绘制（函数体内容可自定义）}
+         */
+        class ThreeJSDemo {
+            constructor() {
+                this.id = 'mycustomlayer';
+                this.type = 'custom';
+                this.renderingMode = '3d';
+
+                /**
+                 * translate数组：[x,y,z]三个值分别表示--相对左上角的水平位置，垂直位置，以及相对地平面高度
+                 * scale：控制立方体的大小缩放级别
+                 */
+                this.translate = [0.8232777, 0.379, 0.0000025];
+                this.scale = 0.00003;
+
+                this.camera = new THREE.Camera();
+                this.scene = new THREE.Scene();
+
+                var geometry = new THREE.BoxGeometry(1, 1, 1);
+                var material = new THREE.MeshPhongMaterial({color: 0xeeeeff});
+                this.cube = new THREE.Mesh(geometry, material);
+                this.scene.add(this.cube);
+
+                const directionalLight = new THREE.DirectionalLight(0xffffff);
+                directionalLight.position.set(0, -70, 100).normalize();
+                this.scene.add(directionalLight);
+            }
+
+            onAdd(map, gl) {
+                this.map = map;
+
+                this.renderer = new THREE.WebGLRenderer({
+                    canvas: map.getCanvas(),
+                    context: gl
+                });
+
+                this.renderer.autoClear = false;
+            }
+
+            /**
+             * 绘制自定义图层
+             */
+            render(gl, matrix) {
+                const m = new THREE.Matrix4().fromArray(matrix);
+                const l = new THREE.Matrix4().makeTranslation(this.translate[0], this.translate[1], this.translate[2])
+                    .scale(new THREE.Vector3(this.scale, -this.scale, this.scale));
+                this.cube.rotation.x += 0.01;
+                this.cube.rotation.y += 0.01;
+
+                this.camera.projectionMatrix.elements = matrix;
+                this.camera.projectionMatrix = m.multiply(l);
+                this.renderer.state.reset();
+                this.renderer.render(this.scene, this.camera);
+                this.map.triggerRepaint();
+            }
+        }
+
+         var map = new cityfun.Map({
+            container: 'map',
+            zoom: 14,
+            center: [116.373, 39.88],
+            bearing: 20,
+            pitch: 70,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        map.on('load', function() {
+            map.addLayer(new ThreeJSDemo());
+        });
+
+        
+    </script>
+</body>
+</html>

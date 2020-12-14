@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加天地图影像</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [120.58018178199796, 31.299183908754387],
+            zoom: 8,
+            style: {
+                id: 'basic',
+                name: 'basic',
+                version: 8,
+                sources: {
+                    img: {
+                        type: 'raster',
+                        'tiles': [
+                            'http://t5.tianditu.gov.cn/DataServer?T=img_w&x={x}&y={y}&l={z}'
+                        ],
+                        'tileSize': 256
+                    },
+                    cia: {
+                        'type': 'raster',
+                        'tiles': [
+                            'http://t1.tianditu.gov.cn/DataServer?T=cia_w&x={x}&y={y}&l={z}'
+                        ],
+                        'tileSize': 256
+                    }
+                },
+                layers: [
+                    {
+                        'id': 'wms-test-layer1',
+                        'type': 'raster',
+                        'source': 'img',
+                        'paint': {}
+                    },
+                    {
+                        'id': 'wms-test-layer2',
+                        'type': 'raster',
+                        'source': 'cia',
+                        'paint': {}
+                    }
+                ]
+            }
+        });
+    </script>
+</body>
+</html>

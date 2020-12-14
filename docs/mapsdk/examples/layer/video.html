@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加视频</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [121.87018799255111, 31.89062782949368],
+            zoom: 10,
+            bearing: 86.39,
+            pitch: 0,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        map.on('load', function() {
+            map.addSource("video", {
+                "type": "video",
+                "urls": ["./data/video/drone.mp4","./data/video/drone.webm"],
+                "coordinates": [
+                    [121.93493043747475,31.995602324789402],
+                    [121.9624629787898,31.760485316184273],
+                    [121.78294164184877,31.753891331726635],
+                    [121.77196618840827,31.99076635606187]
+                ]
+            });
+            map.addLayer({
+                "id": "video",
+                "source": "video",
+                "type": "raster",
+            });
+        });
+    </script>
+</body>
+</html>

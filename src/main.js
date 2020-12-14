@@ -1,11 +1,15 @@
 import '../node_modules/mapbox-gl/dist/mapbox-gl.css';
 // import mapboxgl from '@cgcs2000/mapbox-gl';
+import {LogoControl} from './controls/LogoControl';
+import {MeasureTool} from './tools/measure';
 import mapboxgl from 'mapbox-gl';
 import 'whatwg-fetch';
 import { setConfig } from './config';
 import { version } from '../package.json';
 import { Map } from './map/Map';
 import cloneDeep from 'lodash.clonedeep'
+
+
 
 const exported = cloneDeep(mapboxgl);
 exported.setToken = (token) => {
@@ -15,7 +19,8 @@ exported.setToken = (token) => {
     })
 };
 exported.version = version;
-
+exported.LogoControl = LogoControl;
+exported.MeasureTool = MeasureTool;
 exported.Map = Map;
 
 export default exported;

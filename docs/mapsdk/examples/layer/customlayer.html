@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自定义图层</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            zoom: 3,
+            center: [116.391050, 51.074588],
+            bearing: 100,
+            pitch: 60,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        map.on('load', function() {
+            map.addLayer(new CustomLayer());
+        });
+
+        class CustomLayer {
+            constructor() {
+                this.id = 'WebGLlayer';
+                this.type = 'custom';
+                this.renderingMode = '3d';
+            }
+
+            onAdd(map, gl) {
+                /**
+                 * 顶点片元着色器
+                 */
+                const vertexShaderSource =
+                    "attribute vec3 aPos;\n" +
+                    "uniform mat4 uMatrix;\n" +
+                    "void main() {\n" +
+                    "gl_Position = uMatrix * vec4(aPos, 1.0);\n" +
+                    "}";
+
+                const fragmentShaderSource =
+                    "void main() {\n" +
+                    "gl_FragColor = vec4(0.0, 1.0, 0.0, 1.0);\n" +
+                    "}";
+
+                const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+                gl.shaderSource(vertexShader, vertexShaderSource);
+                gl.compileShader(vertexShader);
+                const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+                gl.shaderSource(fragmentShader, fragmentShaderSource);
+                gl.compileShader(fragmentShader);
+                /**
+                 * 创建并配置program
+                 */
+                this.program = gl.createProgram();
+                gl.attachShader(this.program, vertexShader);
+                gl.attachShader(this.program, fragmentShader);
+                gl.linkProgram(this.program);
+                gl.validateProgram(this.program);
+
+                this.program.aPos = gl.getAttribLocation(this.program, "aPos");
+                this.program.uMatrix = gl.getUniformLocation(this.program, "uMatrix");
+                /**
+                 * 创建顶点和顶点索引的缓冲区数据
+                 */
+                const x = 0.8;
+                const y = 0.3;
+                const z = 0.025;
+                const d = 0.025;
+
+                const vertexArray = new Float32Array([
+                    x, y, 0,
+                    x + d, y, 0,
+                    x, y + d, z,
+                    x + d, y + d, z,
+                    x, y + d + d, 0,
+                    x + d, y + d + d, 0]);
+                const indexArray = new Uint16Array([
+                    0, 1, 2,
+                    1, 2, 3,
+                    2, 3, 4,
+                    3, 4, 5
+                ]);
+
+                this.vertexBuffer = gl.createBuffer();
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.vertexBuffer);
+                gl.bufferData(gl.ARRAY_BUFFER, vertexArray, gl.STATIC_DRAW);
+                this.indexBuffer = gl.createBuffer();
+                gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.indexBuffer);
+                gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, indexArray, gl.STATIC_DRAW);
+            }
+
+            render(gl, matrix) {
+                /**
+                 * 绑定缓冲区，绘制自定义图层
+                 */
+                gl.useProgram(this.program);
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.vertexBuffer);
+                gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, this.indexBuffer);
+                gl.enableVertexAttribArray(this.program.a_pos);
+                gl.vertexAttribPointer(this.program.aPos, 3, gl.FLOAT, false, 0, 0);
+                gl.uniformMatrix4fv(this.program.uMatrix, false, matrix);
+                gl.drawElements(gl.TRIANGLES, 12, gl.UNSIGNED_SHORT, 0);
+            }
+        }
+    </script>
+</body>
+</html>

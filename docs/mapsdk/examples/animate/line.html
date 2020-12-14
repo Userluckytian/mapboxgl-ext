@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>线动画</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+        body {position:relative;}
+        .btn-group {position: absolute;z-index: 999;left: 5px;top:5px;}
+        .btn-group button{padding: 5px 15px;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="btn-group">
+        <button id="pause">暂停</button>
+    </div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [0, 0],
+            zoom: 0.9,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        var geojson = {
+            "type": "FeatureCollection",
+            "features": [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [0, 0]
+                    ]
+                }
+            }]
+        };
+
+        var speedFactor = 30; // 速度
+        var animation; // 动画片断
+        var startTime = 0;
+        var progress = 0;
+        var resetTime = false; // 重置时间
+        var pauseButton = document.getElementById('pause');
+
+        map.on('load', function() {
+
+            map.addLayer({
+                'id': 'line-animation',
+                'type': 'line',
+                'source': {
+                    'type': 'geojson',
+                    'data': geojson
+                },
+                'layout': {
+                    'line-cap': 'round',
+                    'line-join': 'round'
+                },
+                'paint': {
+                    'line-color': '#ed6498',
+                    'line-width': 5,
+                    'line-opacity': .8
+                }
+            });
+
+            startTime = performance.now();
+
+            animateLine();
+
+            // 点击按钮暂停或播放动画
+            pauseButton.addEventListener('click', function() {
+                pauseButton.classList.toggle('pause');
+                if (pauseButton.classList.contains('pause')) {
+                    cancelAnimationFrame(animation);
+                } else {
+                    resetTime = true;
+                    animateLine();
+                }
+            });
+
+            // 当前页面为激活状态时，重置动画时间
+            document.addEventListener('visibilitychange', function() {
+                resetTime = true;
+            });
+
+            // 动画
+            function animateLine(timestamp) {
+                if (resetTime) {
+                    startTime = performance.now() - progress;
+                    resetTime = false;
+                } else {
+                    progress = timestamp - startTime;
+                }
+
+                if (progress > speedFactor * 360) {
+                    startTime = timestamp;
+                    geojson.features[0].geometry.coordinates = [];
+                } else {
+                    var x = progress / speedFactor;
+                    var y = Math.sin(x * Math.PI / 90) * 40;
+                    geojson.features[0].geometry.coordinates.push([x, y]);
+                    map.getSource('line-animation').setData(geojson);
+                }
+                animation = requestAnimationFrame(animateLine);
+            }
+        });
+    </script>
+</body>
+</html>

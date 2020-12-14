@@ -31,17 +31,23 @@
 <link href="cityfun.min.css" rel="stylesheet"></head>
 
 <body>
+
     <div id="map">
 
     </div>
 
     <div id="menu">
 
-        <button id="snap">截图</button>
-        <button id="thumbnail">生成缩略图</button>
-
+   <div class="info">
+        <button onclick="measure.activate('distance')">测距离</button>
+        <button onclick="measure.activate('area')">测面积</button>
+        <button onclick="measure.disable()">暂停测量</button>
+        <button onclick="measure.clear()">清空</button>
+        <button onclick="measure.deactivate()">结束测量</button>
     </div>
 
+    </div>
+ 
 <script type="text/javascript" src="cityfun.min.js"></script><script type="text/javascript" src="test.js"></script></body>
 
 </html>

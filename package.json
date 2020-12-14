@@ -11,7 +11,10 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@turf/area": "^6.0.1",
+        "@turf/distance": "^6.0.1",
         "lodash.clonedeep": "^4.5.0",
+        "lodash.merge": "^4.6.2",
         "mapbox-gl": "^1.13.0",
         "whatwg-fetch": "^3.5.0"
     },

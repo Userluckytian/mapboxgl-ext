@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点动画</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [0, 0],
+            zoom: 0.9,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        var radius = 20;
+
+        function pointOnCircle(angle) {
+            return {
+                "type": "Point",
+                "coordinates": [
+                    Math.cos(angle) * radius,
+                    Math.sin(angle) * radius
+                ]
+            };
+        }
+
+        map.on('load', function () {
+            map.addSource('point', {
+                "type": "geojson",
+                "data": pointOnCircle(0)
+            });
+
+            map.addLayer({
+                "id": "point",
+                "source": "point",
+                "type": "circle",
+                "paint": {
+                    "circle-radius": 10,
+                    "circle-color": "#007cbf"
+                }
+            });
+
+            function animateMarker(timestamp) {
+                map.getSource('point').setData(pointOnCircle(timestamp / 1000));
+
+                requestAnimationFrame(animateMarker);
+            }
+
+            animateMarker(0);
+        });
+    </script>
+</body>
+</html>

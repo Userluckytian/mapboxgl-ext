@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GeoJSON面</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script src="./libs/turf.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [120.27232647014966, 31.11564436139281],
+            zoom: 10,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        map.on('load', function() {
+
+            map.addLayer({
+                'id': 'maine',
+                'type': 'fill',
+                'source': {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'Polygon',
+                            'coordinates': [
+                                [[120.27727916673206,31.15517555845092],[120.30065799028557,31.15517555845092],[120.32181025919999,31.15993898128127],[120.32960320037398,31.150411896194427],[120.34518908272213,31.149459135005756],[120.35298202392744,31.13993099653142],[120.35186874660792,31.12658999422365],[120.32737664576621,31.112293981268024],[120.3073376541401,31.10085562060975],[120.29403869189161,31.064883597781076],[120.24060138093017,31.072512211653304],[120.24839432213543,31.088720984013804],[120.21944911201581,31.108739768497202],[120.1949570111741,31.122083280542185],[120.20274995234814,31.12589536801066],[120.24394121288873,31.133519083485325],[120.24394121288873,31.133519083485325]]
+                            ]
+                        }
+                    }
+                },
+                'layout': {},
+                'paint': {
+                    'fill-color': '#F00',
+                    'fill-opacity': 0.6
+                }
+            });
+        });
+    </script>
+</body>
+</html>

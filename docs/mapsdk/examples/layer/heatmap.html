@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>热力图</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script src="./libs/turf.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [116.46,39.92],
+            zoom: 11,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        map.on('load', function() {
+
+            //添加数据源,该热力图效果，数据源类型支持geojson或vector两种形式
+            map.addSource("heatmap-source", {
+                type: "geojson",
+                data: "./data/geojson/heatmap-track-geo.json"
+            });
+
+            //添加图层
+            map.addLayer({
+                "id": "heatmap-layer",
+                "type": "heatmap",
+                "source": "heatmap-source",
+                "layout": {
+                    "visibility": "visible"
+                },
+                "paint": {
+                    // 数据点的模糊范围，单位是像素，默认值30；要求：值大于等于1，可根据zoom level进行插值设置
+                    "heatmap-radius": 30,
+                    //单个数据点的热力程度，默认值为1；要求：值大于等于0，支持使用property中某个的热力值
+                    "heatmap-weight": {
+                        "property": "mag",
+                        "stops": [[0, 0], [10, 1]]
+                    },
+                    // 用于统一控制热力值的强度，默认值1；要求：值大于等于0，可根据zoom level进行插值设置
+                    "heatmap-intensity": 1,
+                    // 表示热力图颜色阶梯，阶梯的值域范围为0-1，默认值为["interpolate",["linear"],["heatmap-density"],0,"rgba(0, 0, 255, 0)",0.1,"royalblue",0.3,"cyan",0.5,"lime",0.7,"yellow",1,"red"]
+                    "heatmap-color": [
+                        "interpolate",
+                        ["linear"],
+                        ["heatmap-density"],
+                        0, "rgba(0, 0, 255, 0)", 0.1, "royalblue", 0.3, "cyan", 0.5, "lime", 0.7, "yellow", 1, "red"
+                    ],
+                    // 表示热力图的不透明度，默认值1；值域范围0-1，可根据zoom level进行插值设置
+                    "heatmap-opacity": 1,
+                }
+            });
+        });
+    </script>
+</body>
+</html>

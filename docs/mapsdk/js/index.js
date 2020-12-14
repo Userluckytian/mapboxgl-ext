@@ -183,7 +183,7 @@
             success: function (data) {
                 var newData = data;
                 // var tk = "atlas.setConfig({\napiUrl: '" + ATLAS_CONFIG.api + "'\n,accessToken: '" + ATLAS_CONFIG.token + "'\n});\n"
-                // newData = newData.replace(/<!--tk-->/g, tk);
+                // newData = newData.replace(//g, tk);
                 newData = newData.replace(/libs\/cityfun\/cityfun.min.js/g, 'libs/cityfun/cityfun.min.js?' + SDK_VERSION);
                 newData = newData.replace(/libs\/cityfun\/cityfun.min.css/g, 'libs/cityfun/cityfun.min.css?' + SDK_VERSION);
                 updateEditor(newData);

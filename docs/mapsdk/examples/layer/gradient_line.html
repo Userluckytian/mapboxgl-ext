@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>渐变线</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+         var map = new cityfun.Map({
+            container: 'map',
+            center: [120.58018178199796, 31.299183908754387],
+            zoom: 10,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        map.on('load', function() {
+
+            map.addLayer({
+                "id": "route",
+                "type": "line",
+                "source": {
+                    "type": "geojson",
+                    "lineMetrics": true,
+                    "data": {
+                        "type": "Feature",
+                        "properties": {},
+                        "geometry": {
+                            "type": "LineString",
+                            "coordinates": [
+                                [120.47005841247261,31.22659541930757],
+                                [120.50961250427758,31.22044546617491],
+                                [120.52255747976886,31.22967024580717],
+                                [120.52255747976886,31.237664326469172],
+                                [120.54269410832666,31.241968551275704],
+                                [120.54557076954916,31.24934676602217],
+                                [120.56067324095238,31.25365045841265],
+                                [120.56498823279628,31.258568723773408],
+                                [120.57865237359829,31.264716195097066],
+                                [120.62252145720669,31.270248576915748]
+                            ]
+                            
+                        }
+                    }
+                },
+                "layout": {
+                    "line-join": "round",
+                    "line-cap": "round"
+                },
+                "paint": {
+                    "line-color": "#f00",
+                    "line-width": 8,
+                    'line-gradient': [
+                        'interpolate',
+                        ['linear'],
+                        ['line-progress'],
+                        0, "blue",
+                        0.1, "royalblue",
+                        0.3, "cyan",
+                        0.5, "lime",
+                        0.7, "yellow",
+                        1, "red"
+                    ]
+                }
+            });
+        });
+    </script>
+</body>
+</html>

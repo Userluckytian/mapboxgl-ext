@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地图事件监听</title>
+    <link rel="stylesheet" href="./libs/cityfun/cityfun.min.css">
+    <style>
+        html,body,#map {height:100%;margin:0;}
+        body {position:relative;}
+        .info {position: absolute;z-index: 999;left: 5px;top:5px;background-color:#fff;padding:5px 15px;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="info"></div>
+    <script src="./libs/cityfun/cityfun.min.js"></script>
+    <script>
+        var map = new cityfun.Map({
+            container: 'map',
+            center: [120.58018178199796, 31.299183908754387],
+            zoom: 8,
+            style: 'http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json'
+        });
+
+        var infoContainer = document.querySelector(".info");
+
+        function setInfo(msg) {
+            infoContainer.innerHTML = msg || '';
+        }
+
+        map.on('click', function(e) {
+            setInfo('您点击了地图，位置：' + e.lngLat.toArray());
+        });
+
+        map.on('move', function() {
+            setInfo('地图移动中...');
+        });
+
+        map.on('zoom', function() {
+            setInfo('地图缩放中...');
+        });
+
+    </script>
+</body>
+</html>
