@@ -1,5 +1,5 @@
 {
-    "name": "cityfun-gl",
+    "name": "cityfun-gl-4490",
     "version": "1.0.3",
     "description": "",
     "main": "./dist/cityfun.min.js",
@@ -11,6 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@cgcs2000/mapbox-gl": "^1.13.0",
         "@turf/area": "^6.0.1",
         "@turf/distance": "^6.0.1",
         "lodash.clonedeep": "^4.5.0",

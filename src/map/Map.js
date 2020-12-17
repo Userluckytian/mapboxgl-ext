@@ -1,4 +1,4 @@
-import mapboxgl from 'mapbox-gl';
+import mapboxgl from '@cgcs2000/mapbox-gl';
 import { saveFile } from '../utils/file';
 // import { config } from '../config';
 // import { merge } from '../utils/utils';

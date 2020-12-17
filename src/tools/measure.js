@@ -1,4 +1,4 @@
-import mapboxgl from 'mapbox-gl';
+import mapboxgl from '@cgcs2000/mapbox-gl';
 
 import merge from 'lodash/merge';
 import { distance, area, guid, measureTextWidth, bindAll, formatNum, throttle } from '../utils/index';
