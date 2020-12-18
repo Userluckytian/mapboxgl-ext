@@ -47,6 +47,26 @@ export class Map extends mapboxgl.Map {
                 paint: {},
             });
         }
+              /**
+         *加载arcgis动态服务
+         * @param {*} url
+         * @param {*} options
+         */
+    addArcGISDynamicLayer(url, options) {
+        let { layerid,layers } = options;
+        this.addSource(layerid, {
+            type: 'raster',
+            tiles: [`${url}/export?dpi=96&transparent=true&format=png8&bbox=&SRS=EPSG:3857&STYLES=${layers}&WIDTH=256&HEIGHT=256&f=imageBBOX={bbox-epsg-3857}`],
+            tileSize: 256,
+        });
+        this.addLayer({
+            id: layerid,
+            type: 'raster',
+            source: layerid,
+            layout: {},
+            paint: {},
+        });
+    }
         /**
          *加载WMS服务
          * @param {*} url
