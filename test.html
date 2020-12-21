@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cityfun Map SDK 测试</title>
+    <link href="./dist/cityfun.min.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+      }
+
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+
+      #menu {
+        position: absolute;
+        background: #fff;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+    <div id="menu">
+      <div class="info">
+        <button id="distance">测距离</button>
+        <button id="area">测面积</button>
+        <button id="disable">暂停测量</button>
+        <button id="clear">清空</button>
+        <button id="deactivate">结束测量</button>
+      </div>
+    </div>
+<script type="text/javascript" src="./dist/cityfun.min.js"></script>
+
+    <script>
+      cityfun.setToken(
+        "pk.eyJ1IjoibGltemdpc2VyIiwiYSI6ImNqZXFvemJlcjB1bWYyd2x0eGxjeGdvcXIifQ.gSsj63R-2VZV7L7mpSw0Uw"
+      );
+      var map = new cityfun.Map({
+        container: "map",
+        center: [120.70044254024515, 31.301339366724918],
+        zoom: 12,
+        pitch: 60,
+        style:
+          "http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json",
+      });
+      var measure = null;
+
+      map.on("load", function() {
+        measure = new cityfun.MeasureTool(map);
+
+        document.getElementById("distance").onclick = function() {
+          measure.activate("distance");
+        };
+        document.getElementById("area").onclick = function() {
+          measure.activate("area");
+        };
+        document.getElementById("disable").onclick = function() {
+          measure.disable();
+        };
+        document.getElementById("clear").onclick = function() {
+          measure.clear();
+        };
+        document.getElementById("deactivate").onclick = function() {
+          measure.deactivate();
+        };
+      });
+    </script>
+  </body>
+</html>

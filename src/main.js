@@ -1,4 +1,5 @@
 import '../node_modules/mapbox-gl/dist/mapbox-gl.css';
+import './css/main.css';
 // import mapboxgl from '@cgcs2000/mapbox-gl';
 import {LogoControl} from './controls/LogoControl';
 import {MeasureTool} from './tools/measure';
@@ -19,9 +20,10 @@ exported.setToken = (token) => {
     })
 };
 exported.version = version;
+exported.Map = Map;
 exported.LogoControl = LogoControl;
 exported.MeasureTool = MeasureTool;
-exported.Map = Map;
+
 
 export default exported;
 

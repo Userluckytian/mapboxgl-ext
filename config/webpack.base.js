@@ -83,7 +83,7 @@ module.exports = {
 
     // 配置插件
     plugins: [
-        new HtmlWebpackPlugin({ template: './index.html' }),
+        // new HtmlWebpackPlugin({ template: './index.html' }),
 
         new MiniCssExtractPlugin({
             filename: 'cityfun.min.css',

@@ -214,7 +214,7 @@ const SOURCES = [POINT_SOURCE_ID, LINE_SOURCE_ID, FILL_SOURCE_ID, DRAGGING_POINT
 
     activate(type, callback) {
         const { map } = this;
-        this._beforeToFront(type);
+       // this._beforeToFront(type);
         if(!map || (type === this.type && this.isMeasuring)) return;
         this.type = type || 'distance';
         if(this.isMeasuring) return;

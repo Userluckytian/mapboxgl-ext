@@ -119,7 +119,7 @@ export class Map extends mapboxgl.Map {
     addMapStyle(styleJson, options) {
             let { styleid, isBaseMap } = options;
             if (typeof styleJson != 'object') {
-                throw new TypeError('addMapStyle需要传入对象参数');
+                throw new TypeError('addMapStyle需要传入对象类型参数');
             }
             let { zoom, center, pitch } = styleJson;
             Object.keys(styleJson.sources).forEach((key) => {
@@ -178,7 +178,7 @@ export class Map extends mapboxgl.Map {
                                 if (self.hasImage(key)) {
                                     self.removeImage(key);
                                 }
-                                console.log(1);
+                                // console.log(1);
                                 self.addImage(key, simg);
                             });
                         });
