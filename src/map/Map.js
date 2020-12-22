@@ -293,14 +293,7 @@ export class Map extends mapboxgl.Map {
                     data: null,
                 },
             });
-            // this.addLayer({
-            //     id: 'sp-layer-hot',
-            //     type: 'heatmap',
-            //     source: {
-            //         type: 'geojson',
-            //         data: null,
-            //     },
-            // });
+
         }
         // 获取缩略图
     getThumbnail(options) {
