@@ -5,3 +5,7 @@ export const setConfig = (options) => {
 		config[key] = options[key];
 	}
 };
+
+// cfToken
+// mapboxToken
+ 
