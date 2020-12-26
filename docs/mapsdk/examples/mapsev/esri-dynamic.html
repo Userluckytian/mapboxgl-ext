@@ -24,10 +24,9 @@
     <div id="map"></div>
     <script src="./libs/cityfun/cityfun.min.js"></script>
     <script>
-      cityfun.setConfig({
-        cfToken:
-          "Y46MGb0cSrS57uhfERXk8Om7TJv7TfqHR9dzlyiMXHqwHLk4TQz%2BHZ7abgItY0zD8JmSbQZcw%2F2XLGnVHlAB1vJxaWJmFm%2BGZ%2Bhzg0Zo%2BB3qLd4eWoGztA%3D%3D",
-      });
+      cityfun.setToken(
+        "pk.eyJ1IjoibGltemdpc2VyIiwiYSI6ImNqZXFvemJlcjB1bWYyd2x0eGxjeGdvcXIifQ.gSsj63R-2VZV7L7mpSw0Uw"
+      );
       var map = new cityfun.Map({
         container: "map",
         center: [120.69588614879365, 31.294676611581792],
@@ -36,11 +35,11 @@
           "http://webres.cityfun.com.cn/szmap/szmap_dark/3857/map_dark.json",
       });
       map.on("load", (e) => {
-        map.addWMTSLayer(
-          "http://192.168.3.48:8081/geoserver/gwc/service/wmts",
+        // arcgis  dynamic
+        map.addArcGISDynamicLayer(
+          "http://192.168.2.138:6080/arcgis/rest/services/SIP/qgxzqh/MapServer",
           {
-            layerid: "wmts01",
-            layer: "myTest:addr_count_Area_frzc",
+            layerid: "esri-dynamic-layer",
           }
         );
       });

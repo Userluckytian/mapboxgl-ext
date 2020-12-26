@@ -37,12 +37,12 @@ var map = new cityfun.Map({
 
 map.on("load", function() {
   // arcgis  dynamic
-  map.addArcGISDynamicLayer(
-    "http://192.168.2.138:6080/arcgis/rest/services/SIP/qgxzqh/MapServer",
-    {
-      layerid: "esri-dynamic-layer",
-    }
-  );
+  // map.addArcGISDynamicLayer(
+  //   "http://192.168.2.138:6080/arcgis/rest/services/SIP/qgxzqh/MapServer",
+  //   {
+  //     layerid: "esri-dynamic-layer",
+  //   }
+  // );
   // // arcgis tile
   // map.addArcGISTileLayer( "http://192.168.2.64/geocms/v1/cf/rest/services/MapService/ESRI/01f1dcb7-c9fc-f1a1-c83b-39f987c7d5ad",{
   //     layerid: "esri-tile",
@@ -73,4 +73,10 @@ map.on("load", function() {
   //   layerid: "geo-server-wmts",
   //   layer: "SZ_BaseMap:SZ_BaseMap_10",
   // });
+
+    // arcgis tile
+  map.addArcGISTileLayer( "http://192.168.2.64/geocms/v1/cf/rest/services/MapService/ESRI/ff0a52e3-f9e0-4cc9-8034-5d170dfb4b9c",{
+      layerid: "esri-tile",
+    }
+  );
 });
