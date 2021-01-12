@@ -1,6 +1,6 @@
 {
     "name": "cityfun-gl",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "",
     "main": "./dist/cityfun.min.js",
     "scripts": {
