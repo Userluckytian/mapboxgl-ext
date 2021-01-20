@@ -26,7 +26,6 @@ export class Map extends mapboxgl.Map {
       // 拦截请求
       if (!transformRequest) {
         options.transformRequest = (url, resourceType) => {
-          console.log(url);
           if (resourceType.indexOf(resourceType) >= 0 && !isImageBase64Url(url)) {
             return {
               url: getTokenUrl(url),
@@ -74,7 +73,7 @@ export class Map extends mapboxgl.Map {
    */
   addArcGISDynamicLayer(url, options) {
     let { layerid, layers } = options;
-    let tmpurl = `${url}/export?dpi=96&transparent=true&format=png8&bbox=&SRS=EPSG:${epsgid}&STYLES=${layers ||""}&WIDTH=256&HEIGHT=256&f=image&bbox={bbox-epsg-${epsgid}}`;
+    let tmpurl = `${url}/export?dpi=96&transparent=true&format=png8&SRS=EPSG:${epsgid}&STYLES=${layers ||""}&WIDTH=256&HEIGHT=256&f=image&bbox={bbox-epsg-${epsgid}}`;
     this.addSource(layerid, {
       type: "raster",
       tiles: [tmpurl],
@@ -138,7 +137,7 @@ export class Map extends mapboxgl.Map {
    * @param {*} options
    */
   addMapStyle(styleJson, options) {
-    let { styleid, isBaseMap } = options;
+    let { styleid, isBaseMap,isFlyTo } = options;
     if (typeof styleJson != "object") {
       throw new TypeError("addMapStyle需要传入对象类型参数");
     }
@@ -167,15 +166,18 @@ export class Map extends mapboxgl.Map {
         }
       }
     }
-    if (zoom) {
-      this.setZoom(zoom);
+    if(isFlyTo){
+      if (zoom) {
+        this.setZoom(zoom);
+      }
+      if (pitch) {
+        this.setPitch(pitch);
+      }
+      if (center) {
+        this.setCenter(center);
+      }
     }
-    if (pitch) {
-      this.setPitch(pitch);
-    }
-    if (center) {
-      this.setCenter(center);
-    }
+  
   }
   /**
    * 获取style.json 对象

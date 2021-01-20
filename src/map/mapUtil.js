@@ -86,6 +86,7 @@ export function getStyleJsonByUrl(styleurl) {
  * @param {*} url
  */
 export function getTokenUrl(url) {
+
   let { cfToken } = config;
   if (url.indexOf("?") > -1) {
     return cfToken ? url + "&token=" + cfToken : url;
