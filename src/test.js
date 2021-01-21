@@ -41,6 +41,7 @@ map.on("load", function() {
   //   .then((styleObj) => {
   //     map.addMapStyle(styleObj, {
   //       styleid: "special-id",
+    // isFlyTo:false,// 默认false
   //     });
   //   });
   //  wmts  http://map2.cityfun.com.cn/geoserver/gwc/service/wmts
