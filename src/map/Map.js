@@ -13,10 +13,13 @@ import {
 import { isObject, merge } from "../utils/utils";
 import { resourceType } from "./ResourceType";
 import { config } from "../config";
-const  epsgid = 3857;
+let  epsgid = 3857;
 export class Map extends mapboxgl.Map {
  
   constructor(options) {
+    if(config.EPSG){
+      epsgid = config.EPSG;
+    }
     let { style, transformRequest } = options;
     // style 对象或 mapbox online地址
     if (isObject(style) || isMapboxSevUrl(style)) {
